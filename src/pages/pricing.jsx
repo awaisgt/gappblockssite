@@ -4,7 +4,7 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logomark } from '@/components/Logo'
+import { Logo } from '@/components/Logo'
 import { Faqs } from "@/components/Faqs"
 import { Testimonials } from "@/components/Testimonials"
 import { Header } from '@/components/Header'
@@ -113,7 +113,7 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        <Logomark className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
+        <Logo className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
         <span className="ml-4">{name}</span>
       </h3>
       <p
