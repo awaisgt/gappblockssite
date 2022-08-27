@@ -23,8 +23,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <PrimaryFeatures />
         <SecondaryFeatures />
+        <PrimaryFeatures />
         <CallToAction />
         <Reviews />
         <Pricing />
