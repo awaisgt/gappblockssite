@@ -6,6 +6,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import Services from "@/components/Services";
 
 function MenuIcon(props) {
   return (
@@ -98,22 +99,22 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="#features">
-                              Features
-                            </MobileNavLink>
-                            <MobileNavLink href="#reviews">
-                              Reviews
-                            </MobileNavLink>
+                            <Services/>
                             <MobileNavLink href="#pricing">
                               Pricing
                             </MobileNavLink>
-                            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
+                            <MobileNavLink href="#reviews">
+                              Contact
+                            </MobileNavLink>
+                            <MobileNavLink href="#blog">
+                              Blog
+                            </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="/login" variant="outline">
-                              Log in
+                            <Button href="https://admin.gapp.pk" variant="outline">
+                              Sign In
                             </Button>
-                            <Button href="#">Download the app</Button>
+                            <Button href="#">Sign Up</Button>
                           </div>
                         </Popover.Panel>
                       </>
@@ -122,11 +123,11 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" variant="outline" className="hidden lg:block">
-              Log in
+            <Button href="https://admin.gapp.pk" variant="outline" className="hidden lg:block">
+              Sign In
             </Button>
             <Button href="#" className="hidden lg:block">
-              Download
+              Sign Up
             </Button>
           </div>
         </Container>
