@@ -267,6 +267,7 @@ export default function Pricing() {
           ))}
         </div>
       </Container>
+
       <Testimonials></Testimonials>
       <Faqs></Faqs>
       <Footer></Footer>

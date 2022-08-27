@@ -1,5 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
-export function Testimonials() {
+
+export  function Testimonials() {
+
     return (
       <div className="bg-white py-16 lg:py-24">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
