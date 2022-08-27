@@ -6,6 +6,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import Services from "@/components/Services";
 
 function MenuIcon(props) {
   return (
@@ -98,9 +99,7 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="#features">
-                              Features
-                            </MobileNavLink>
+                            <Services/>
                             <MobileNavLink href="#pricing">
                               Pricing
                             </MobileNavLink>
