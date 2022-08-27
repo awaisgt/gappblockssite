@@ -4,7 +4,6 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { Faqs } from "@/components/Faqs"
 import { Testimonials } from "@/components/Testimonials"
 import { Header } from '@/components/Header'
@@ -113,7 +112,6 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        <Logo className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
         <span className="ml-4">{name}</span>
       </h3>
       <p
@@ -202,7 +200,7 @@ export default function Pricing() {
 
         
       <Container>
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center mt-8">
           <h2
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
@@ -261,7 +259,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3 mb-16">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}
