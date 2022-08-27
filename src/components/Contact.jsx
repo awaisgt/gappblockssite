@@ -10,7 +10,7 @@ export function Contact() {
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact us</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3 overflow-hidden rounded-lg">
             {/* Contact information */}
             <div className="relative overflow-hidden py-10 px-6 bg-indigo-700 sm:px-10 xl:p-12">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
