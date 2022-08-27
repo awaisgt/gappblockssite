@@ -199,8 +199,7 @@ export function SecondaryFeatures() {
           ALL IN ONE PLATFORM
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          GAPP Blocks is a one-stop solution for your e-commerce business. Whether it's your website, your 
-          mobile app, or an entire delivery system, GAPP Blocks has everything you need in one location. It's 
+          GAPP Blocks is a one-stop solution for your e-commerce business. Whether it&apos;s your website&sbquo; your mobile app&sbquo; or an entire deliver system&sbquo; GAPP Blocks has everything you need in one location. It&apos;s 
           simple!
           </p>
         </div>
