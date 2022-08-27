@@ -193,7 +193,6 @@ function Plan({
 }
 
 export default function Pricing() {
- 
   let [activePeriod, setActivePeriod] = useState('Monthly')
 
   return (
@@ -268,8 +267,9 @@ export default function Pricing() {
           ))}
         </div>
       </Container>
-      <Faqs></Faqs>
+
       <Testimonials></Testimonials>
+      <Faqs></Faqs>
       <Footer></Footer>
     </section>
     
