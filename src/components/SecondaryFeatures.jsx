@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Website',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Make storefront instantly without having to learn how to code, and publish it on your own personalized domain name, such as www.yourcompany.com.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'MOBILE APP',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'Create stunning e-Commerce mobile apps instantly without having to learn to code and publish your own apps on Apple App Store or Google Play Store with the help of a GAPP  Consultants.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'SHIPPING',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'With one of our many blocks, you can easily integrate your default shipping methods such as GAPP Finder, Fed-Ex, UPS, Uber Eats, etc. or request a GAPP Consultant for custom integration.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'PAYMENT GATEWAYS',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Whether you use one of our numerous available blocks to integrate your default shipping methods like Stripe, PayPal, Square, etc., or you request a GAPP Consultant for custom integration',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'CMS',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Content Management System designed for managing and developing mobile apps and websites. Modify the content, appearance, and feel of your app or website. Additionally, supervise and maintain the business procedures using our analytics tools.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'GAPP Finder',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'GAPP Finder is the delivery workforce tracker that leads to more effective deliveries. It makes it easy for you and your customers to track their deliveries in real-time and enables the delivery workforce to work efficiently and make deliveries on time.',
     icon: DeviceChartIcon,
   },
 ]
@@ -196,11 +196,12 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+          ALL IN ONE PLATFORM
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+          GAPP Blocks is a one-stop solution for your e-commerce business. Whether it's your website, your 
+          mobile app, or an entire delivery system, GAPP Blocks has everything you need in one location. It's 
+          simple!
           </p>
         </div>
         <ul

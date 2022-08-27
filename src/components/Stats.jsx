@@ -5,10 +5,11 @@ export function Stats() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-                        Trusted by developers from over 80 planets
+                    Our Impact We have been of assistance to growing businesses.
                     </h2>
                     <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.
+                        At GAPP Blocks, we prioritize our clients by providing them with results-oriented guarantees and 
+                        support. We take great pride in serving our clientele by putting their requirements first.
                     </p>
                 </div>
             </div>
@@ -17,18 +18,22 @@ export function Stats() {
                     <div className="absolute inset-0 h-1/2 bg-gray-50" />
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="max-w-4xl mx-auto">
-                            <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+                            <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-4">
                                 <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Pepperoni</dt>
-                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">100%</dd>
+                                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Orders Processed</dt>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">K+</dd>
                                 </div>
                                 <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-                                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Delivery</dt>
-                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">24/7</dd>
+                                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Countries Served</dt>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">XX+</dd>
                                 </div>
                                 <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Calories</dt>
-                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">100k</dd>
+                                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Satisfied Customers</dt>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">XY+</dd>
+                                </div>
+                                <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+                                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Miles Covered</dt>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">XY+</dd>
                                 </div>
                             </dl>
                         </div>

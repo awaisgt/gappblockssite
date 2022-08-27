@@ -6,6 +6,7 @@ import { Hero } from '@/components/Hero'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Stats } from "@/components/Stats";
+import { Newsletter } from '@/components/Newsletter'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <SecondaryFeatures />
         <Stats />
         <PrimaryFeatures />
+        <Newsletter />
       </main>
       <Footer />
     </>
