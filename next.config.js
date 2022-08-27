@@ -5,8 +5,7 @@ const nextConfig = {
     newNextLinkBehavior: true,
     scrollRestoration: true,
     images: {
-      allowFutureImage: true,
-      unoptimized: true
+      allowFutureImage: true
     }
   }
 }
