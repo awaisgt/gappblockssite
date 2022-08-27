@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pocket - Invest at the perfect time.</title>
+        <title>GAPP Blocks</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+          content="We have got all the tools to turn your e-commerce ideas into reality. GAPP Blocks presents you with an easy no-code solution to kickstart your journey of success."
         />
       </Head>
       <Header />
