@@ -192,7 +192,8 @@ function Plan({
   )
 }
 
-export default function pricing() {
+export default function Pricing() {
+ 
   let [activePeriod, setActivePeriod] = useState('Monthly')
 
   return (
