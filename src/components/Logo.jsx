@@ -6,7 +6,7 @@ export function Logo(props) {
       <Image width="40" height="40" {...props}
           src={GappLogo}
           alt=""
-          className="pointer-events-none absolute inset-0 h-full"
+          className="absolute inset-0 h-full"
       />
   )
 }
