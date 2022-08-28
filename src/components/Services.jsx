@@ -8,12 +8,10 @@ function classNames(...classes) {
 export default function Services() {
     return (
         <Menu as="div">
-            <div>
-                <Menu.Button className="inline-flex justify-center">
+                <Menu.Button as="a" className="inline-flex justify-center relative -my-2 -mx-3 rounded-lg p;-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]">
                     Services
-                    <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+                    <ChevronDownIcon className="mt h-5 w-5" aria-hidden="true" />
                 </Menu.Button>
-            </div>
 
             <Transition
                 enter="transition ease-out duration-100"
