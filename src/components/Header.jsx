@@ -100,10 +100,10 @@ export function Header() {
                         >
                           <div className="space-y-4">
                             <Services/>
-                            <MobileNavLink href="pricing">
+                            <MobileNavLink href="/pricing">
                               Pricing
                             </MobileNavLink>
-                            <MobileNavLink href="contact">
+                            <MobileNavLink href="/contact">
                               Contact
                             </MobileNavLink>
                             <MobileNavLink href="#blog">

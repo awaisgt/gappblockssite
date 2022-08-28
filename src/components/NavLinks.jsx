@@ -9,7 +9,7 @@ export function NavLinks() {
   return [
     ['Services', '#'],
     ['Pricing', 'pricing'],
-    ['Contact', '#contact'],
+    ['Contact', 'contact'],
     ['Blog', '#blog'],
   ].map(([label, href], index) => (
       (index !== 0) ?

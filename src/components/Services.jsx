@@ -26,7 +26,7 @@ export default function Services() {
                         <Menu.Item>
                             {({ active }) => (
                                 <a
-                                    href="#"
+                                    href="storefront"
                                     className={classNames(
                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                         'block px-4 py-2 text-sm'
@@ -52,7 +52,7 @@ export default function Services() {
                         <Menu.Item>
                             {({ active }) => (
                                 <a
-                                    href="#"
+                                    href="shipping"
                                     className={classNames(
                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                         'block px-4 py-2 text-sm'
@@ -62,21 +62,19 @@ export default function Services() {
                                 </a>
                             )}
                         </Menu.Item>
-                        <form method="POST" action="#">
-                            <Menu.Item>
-                                {({ active }) => (
-                                    <button
-                                        type="submit"
-                                        className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block w-full text-left px-4 py-2 text-sm'
-                                        )}
-                                    >
-                                        Payment Gateways
-                                    </button>
-                                )}
-                            </Menu.Item>
-                        </form>
+                        <Menu.Item>
+                        {({ active }) => (
+                                <a
+                                    href="payment"
+                                    className={classNames(
+                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        'block px-4 py-2 text-sm'
+                                    )}
+                                >
+                                    Payment Gateways
+                                </a>
+                            )}
+                        </Menu.Item>
                     </div>
                 </Menu.Items>
             </Transition>
