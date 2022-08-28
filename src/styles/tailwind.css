@@ -22,3 +22,12 @@
 #__next {
   min-height: 100%;
 }
+
+*,
+:root {
+  --accent: #54AACE;
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
