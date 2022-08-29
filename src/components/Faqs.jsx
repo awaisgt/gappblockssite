@@ -7,51 +7,51 @@ const faqs = [
     {
       question: 'Do I need to be a developer to use GAPP Blocks?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'No, you don’t need to be a designer or developer to use GAPP Blocks. Add features and functionality to your store with blocks.',
     },
     {
-      question: 'In what countries can I use GAPP Blocks?',
+      question: 'How does the live chat block work?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'The live chat block makes it possible for you to integrate live chat into your website and mobile app, which in turn makes it possible for customers, store admins, and delivery drivers to communicate with one another.',
     },
     {
-      question: 'How does the live chat module function?',
+      question: 'What exactly is GAPP CO consultancy?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
+        'GAPP Consultants are the core of GAPP Universe. They are experts & geeks in the field of SDLC & ITIL with over 10 years of combined experience building applications for Fortune 500s. Our GAPP Consultants lead the architecture on our GAPP Blocks™ and continuously develop modulated blocks for our customers.',
     },
   ],
   [
     {
       question: 'Can I use my own domain with GAPP Blocks?',
       answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
+        'With GAPP Blocks, you may use your own domain name. If you already have a domain name, you can connect it to GAPP Blocks through admin panel.',
     },
     {
       question: 'What is GAPP Finder?',
       answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
+        'GAPP Finder is the delivery workforce manager block that leads to more effective deliveries. It makes it easy for you and your customers to track their deliveries in real-time and enables the delivery workforce to work efficiently and make deliveries on time.',
     },
     {
       question: 'How many branches am I allowed to add?',
       answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'You have the possibility to add an endless number of branches if you go with our "Scale" package.',
     },
   ],
   [
     {
       question: 'How can I get my app available on the App Store and Play Store?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'You may opt to publish your app yourself using the ".ipa" and ".aab" files, or a consultant from our consulting firm "GAPP Co" will publish it on Google Play Store and Apple App Store.',
     },
     {
-      question: 'Which shipping modules can be used with GAPP Blocks?',
+      question: 'Which shipping blocks can be used with GAPP Blocks?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'With one of our many blocks, you can easily integrate your default shipping methods such as GAPP Finder, Fed-Ex, UPS, Uber Eats, etc. or request a GAPP Consultant for custom integration.',
     },
     {
-      question: 'What exactly is GAPP CO consultancy?',
+      question: 'In what countries can I use GAPP Blocks?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'You are able to utilize GAPP Blocks in almost all of the countries across the world.',
     },
   ],
 ]
