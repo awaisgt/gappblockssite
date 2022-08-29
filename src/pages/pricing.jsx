@@ -266,7 +266,13 @@ export default function Pricing() {
         </div>
       </Container>
 
-      <Testimonials></Testimonials>
+      <Testimonials
+        text={"GAPP Blocks has all the capabilities needed to build reliable mobile and web apps. " +
+            "The platform includes CMS, Product Management, Shipping, Payment Processing, " +
+            "and Real-Time Delivery Driver Tracking modules"}
+        by={"Marie Chilvers"}
+        designation={"CEO, Mom's Cuisine"}
+      />
       <Faqs></Faqs>
       <Footer></Footer>
     </section>

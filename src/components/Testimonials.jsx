@@ -1,6 +1,6 @@
 import Image from "next/future/image";
-
-export  function Testimonials() {
+import testimonial from "@/images/testimonial.png";
+export  function Testimonials(props) {
 
     return (
       <div className="bg-white py-16 lg:py-24">
@@ -14,16 +14,15 @@ export  function Testimonials() {
               />
             </div>
             <div className="relative lg:col-span-1">
-              <Image className="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="" />
+              <Image className="h-16 w-auto" src={testimonial} alt="testimonial company" />
               <blockquote className="mt-6 text-white">
                 <p className="text-xl font-medium sm:text-2xl">
-                  Workflow has completely transformed how we interact with customers. We&apos;ve seen record bookings, higher
-                  customer satisfaction, and reduced churn.
+                  {props.text}
                 </p>
                 <footer className="mt-6">
                   <p className="flex flex-col font-medium">
-                    <span>Marie Chilvers</span>
-                    <span>CEO, Workcation</span>
+                    <span>{props.by}</span>
+                    <span>{props.designation}</span>
                   </p>
                 </footer>
               </blockquote>
