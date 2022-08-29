@@ -35,8 +35,20 @@ module.exports = {
       },
       colors: ({ colors }) => ({
         gray: colors.neutral,
-        accent: "rgb(var(--accent))"
+        accent: "var(--accent)"
       }),
+      backgroundColor: {
+        accent: "var(--accent)"
+      },
+      textColor: {
+        primary: "var(--primary)"
+      },
+      borderColor: {
+        accent: "var(--accent)"
+      },
+      ring: {
+        accent: "var(--accent)"
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
