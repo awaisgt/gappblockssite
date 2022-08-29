@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 
-const faqs = [
+export const faqs = [
   [
     {
       question: 'Do I need to be a developer to use GAPP Blocks?',

@@ -23,7 +23,7 @@ const navigation = {
   ],
   support: [
     { name: 'Pricing', href: 'pricing' },
-    { name: 'FAQs', href: '#' },
+    { name: 'FAQs', href: 'faqs' },
     { name: 'Contact Us', href: 'contact' },
   ],
   company: [
