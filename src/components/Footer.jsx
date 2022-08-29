@@ -16,24 +16,24 @@
 */
 const navigation = {
   services: [
-    { name: 'Mobile Application', href: '#' },
-    { name: 'GAPP Finder', href: '#' },
-    { name: 'Shipping Methods', href: '#' },
-    { name: 'Payment Gateways', href: '#' },
+    { name: 'Store Front', href: 'storefront' },
+    { name: 'GAPP Finder', href: 'finder' },
+    { name: 'Shipping Methods', href: 'shipping' },
+    { name: 'Payment Gateways', href: 'payment' },
   ],
   support: [
-    { name: 'Pricing', href: '#' },
+    { name: 'Pricing', href: 'pricing' },
     { name: 'FAQs', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Contact Us', href: 'contact' },
   ],
   company: [
-    { name: 'About', href: '#' },
+    { name: 'About', href: 'about' },
     { name: 'Blog', href: '#' },
     { name: 'Partners', href: '#' },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Terms & Conditions', href: '#' },
+    { name: 'Privacy Policy', href: 'privacy-policy' },
+    { name: 'Terms & Conditions', href: 'terms-conditions' },
   ],
   social: [
     {
