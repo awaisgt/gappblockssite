@@ -23,7 +23,7 @@ function Item(props) {
 }
 
 const data = [
-    {label: "Store Fsront", href: "storefront"},
+    {label: "Store Front", href: "storefront"},
     {label: "Finder", href: "finder"},
     {label: "Shipping", href: "shipping"},
     {label: "Payment", href: "payment"},
