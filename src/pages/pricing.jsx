@@ -10,59 +10,59 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 const plans = [
   {
-    name: 'Starter',
+    name: 'Hobby',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: { Monthly: '$49', Annually: '$349' },
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Everything you need to set up your web shop, mobile shop and process payments.',
     button: {
-      label: 'Get started for free',
+      label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      '500 orders',
+      'Website',
+      'Native Mobile App (iOS and Android)',
+      '10 hours of Consultancy by GAPP CO',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
+    name: 'Growth',
     featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    price: { Monthly: '$99', Annually: '$949' },
     description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
+      'Take your company to the next level by using GAPP Finder to manage your delivery staff',
     button: {
       label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
+      '1000 Orders',
+      'Website',
+      'Native Mobile App (iOS & Android)',
+      '20 hours of Consultancy by GAPP CO',
+      'GAPP Finder Basic'
     ],
     logomarkClassName: 'fill-gray-500',
   },
   {
-    name: 'VIP',
+    name: 'Scale',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    price: { Monthly: '$199', Annually: '$1,799' },
     description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+      'Enjoy the benefits of GAPP Blocks & GAPP CO to the fullest, with the support of multiple branches',
     button: {
       label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      '5000 Orders',
+      'Website',
+      'Multiple Branches',
+      'Native Mobile App (iOS & Android)',
+      '30 hours of Consultancy by GAPP CO',
+      'GAPP Finder Plus',
     ],
     logomarkClassName: 'fill-cyan-500',
   },
@@ -198,14 +198,14 @@ export default function Pricing() {
     <section>
     <Header/>
 
-        
+
       <Container>
         <div className="mx-auto max-w-2xl text-center mt-8">
           <h2
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Flat pricing, no management fees.
+            Simple prices that work for every business
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             Whether you’re one person trying to get ahead or a big firm trying
@@ -270,6 +270,6 @@ export default function Pricing() {
       <Faqs></Faqs>
       <Footer></Footer>
     </section>
-    
+
   )
 }
