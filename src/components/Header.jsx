@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
-import Services from "@/components/Services";
+import { Services } from "@/components/Services";
 
 function MenuIcon(props) {
   return (
@@ -47,6 +48,7 @@ function MobileNavLink({ children, ...props }) {
 }
 
 export function Header() {
+  const [isOpenMobile, setIsOpenMobile] = useState(false)
   return (
     <header>
       <nav>
@@ -99,7 +101,13 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <Services/>
+                            <div
+                              onClick={() => setIsOpenMobile(!isOpenMobile)}
+                              className="block text-base leading-7 tracking-tight text-gray-700"
+                            >
+                              Services
+                              {isOpenMobile && <Services show={true} />}
+                            </div>     
                             <MobileNavLink href="/pricing">
                               Pricing
                             </MobileNavLink>
