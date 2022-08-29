@@ -5,51 +5,51 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'Do I need to be a developer to use GAPP Blocks?',
       answer:
         'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'In what countries can I use GAPP Blocks?',
       answer:
         'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'How does the live chat module function?',
       answer:
         'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
     },
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
+      question: 'Can I use my own domain with GAPP Blocks?',
       answer:
         'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
     },
     {
-      question: 'Where is Pocket based?',
+      question: 'What is GAPP Finder?',
       answer:
         'Let’s just say it’s not somewhere where the SEC is going to find us.',
     },
     {
-      question: 'Is there any age limit to trading on Pocket?',
+      question: 'How many branches am I allowed to add?',
       answer:
         'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'How can I get my app available on the App Store and Play Store?',
       answer:
         'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'Which shipping modules can be used with GAPP Blocks?',
       answer:
         'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'What exactly is GAPP CO consultancy?',
       answer:
         'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
     },
@@ -74,7 +74,7 @@ export function Faqs() {
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
             <Link
-              href="mailto:info@example.com"
+              href="contact"
               className="text-gray-900 underline"
             >
               reach out to us
