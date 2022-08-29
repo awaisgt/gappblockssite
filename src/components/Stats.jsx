@@ -21,19 +21,19 @@ export function Stats() {
                             <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-4">
                                 <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
                                     <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Orders Processed</dt>
-                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">10K+</dd>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-primary">10K+</dd>
                                 </div>
                                 <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                                     <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Countries Served</dt>
-                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">20+</dd>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-primary">20+</dd>
                                 </div>
                                 <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                                     <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Satisfied Customers</dt>
-                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">1K+</dd>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-primary">1K+</dd>
                                 </div>
                                 <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                                     <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Miles Covered</dt>
-                                    <dd className="order-1 text-5xl tracking-tight font-bold text-indigo-600">40K+</dd>
+                                    <dd className="order-1 text-5xl tracking-tight font-bold text-primary">40K+</dd>
                                 </div>
                             </dl>
                         </div>
