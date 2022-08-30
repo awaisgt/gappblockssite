@@ -46,5 +46,6 @@ export default function HeroSection(props) {
           </main>
         </div>
       </div>
+    </div>
   )
 }
