@@ -69,15 +69,15 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 
 const PrimaryFeaturesContent = {
-  Heading:"What is GAPP Finder?",
-  innerContent:"GAPP Finder is real-time tracking and live map make clients feel involved in the buying process. GAPP Finder uses local data like modern ride-sharing apps, allowing users totrack drivers positions and communicate in real time."
+  Heading:"Build Apps In Minutes, Not Months!",
+  innerContent:"Designed to be powerful, yet simple, GAPP Blocks give organizations the ability to create mobile applications that are native to the phone they\'re designed for."
 }
 
 const primaryFeatures = [
   {
-    name: 'Easy Navigation',
+    name: 'Storefront',
     description:
-      'Deliver more quickly and efficiently thanks to navigation that is simple and dynamic in real-time. Increase delivery efficiency.',
+      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
     icon: function DeviceTouchIcon(props) {
       let id = useId()
     
@@ -171,9 +171,9 @@ const primaryFeatures = [
     },
   },
   {
-    name: 'Track Earnings',
+    name: 'Live Tracking',
     description: 
-      'Make it possible for your delivery crew to keep track of how much they earn every order, per mile driven, or per hour worked.',
+      "For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it's 10 seconds if you invite an insider.",
     icon: function DeviceUserIcon(props) {
       return (
         <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
@@ -228,9 +228,9 @@ const primaryFeatures = [
     },
   },
   {
-    name: 'Manage Orders',
+    name: 'Push Notifications',
     description:
-      'Your delivery drivers can view presently assigned orders and either accept or reject them, as well as view completed orders from the past. ',
+      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
     icon: function DeviceNotificationIcon(props) {
       return (
         <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
