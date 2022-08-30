@@ -2,6 +2,7 @@
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import TextSection from "@/components/TextSection"
+import Link from "next/link";
 
 const data = [
     {
@@ -87,10 +88,10 @@ export default function termsOfService() {
                         GAPP Blocks is firmly committed to protecting the privacy of your personal information and the personal information of your customers. By using the Service, you acknowledge and agree that GAPP Blocks collection, usage and disclosure of this personal information is governed by our <a className="text-accent" href='/privacy-policy/'>privacy policy</a>
                     </p>
                     <p className="text-justify">
-                        We are in compliance with the additional requirements for the restricted scope with Google Cloud Platform through which the App’s use of information received from Gmail APIs will adhere to Google's Limited Use Requirements.
+                        We are in compliance with the additional requirements for the restricted scope with Google Cloud Platform through which the App’s use of information received from Gmail APIs will adhere to Google&apos;s Limited Use Requirements.
                     </p>
                     <p className="text-justify">
-                    Additionally, if: (a) you are established in the European Economic Area (EEA); (b) you provide goods or services to customers in the EEA; or (c) you are otherwise subject to the requirements of the EU General Data Protection Regulation, GAPP Blocks collection and use of personal information of any European residents is also subject to our <a className="text-accent" href="/data-processing">Data Processing Addendum</a>. 
+                    Additionally, if: (a) you are established in the European Economic Area (EEA); (b) you provide goods or services to customers in the EEA; or (c) you are otherwise subject to the requirements of the EU General Data Protection Regulation, GAPP Blocks collection and use of personal information of any European residents is also subject to our <Link className="text-accent" href="/data-processing">Data Processing Addendum</Link>.
                     </p>
                 </div>
             </TextSection>
