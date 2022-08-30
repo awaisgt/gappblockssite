@@ -33,7 +33,8 @@ const navigation = {
   ],
   legal: [
     { name: 'Privacy Policy', href: 'privacy-policy' },
-    { name: 'Terms & Conditions', href: 'terms-conditions' },
+    { name: 'Terms of Service', href: 'terms-of-service' },
+    { name: 'Data Processing Addendum', href: 'data-processing' },
   ],
   social: [
     {
