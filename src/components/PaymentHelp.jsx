@@ -1,6 +1,7 @@
 import {
   SparklesIcon,
 } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 export default function PaymentHelp() {
   return (
@@ -16,20 +17,18 @@ export default function PaymentHelp() {
                   </div>
                   <div className="mt-6">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                      Better understand your customers
+                      Trouble finding what you’re looking for?
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia
-                      porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-                      Lectus viverra dui tellus ornare pharetra.
+                      Make a request to a GAPP Consultant for specialized assistance with the unique integration of the Shipping Method of your choosing, and the consultant will get back to you as soon as possible. 
                     </p>
                     <div className="mt-6">
-                      <a
-                        href="#"
+                      <Link
+                        href="/contact"
                         className="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
                       >
-                        Get started
-                      </a>
+                        We’re here to help
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -48,17 +47,17 @@ export default function PaymentHelp() {
           <div className="bg-indigo-50 mt-20">
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
-              <span className="block">Ready to dive in?</span>
-              <span className="block text-indigo-600">Start your free trial today.</span>
+              <span className="block">Ready to start shipping?</span>
+              <span className="block text-indigo-600">Start your own platform today.</span>
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow">
-                <a
-                  href="#"
+                <Link
+                  href="/pricing"
                   className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
                 >
                   Get started
-                </a>
+                </Link>
               </div>
             </div>
           </div>
