@@ -110,29 +110,11 @@ export default function ShippingMainCard() {
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">Take control of your</span>
-                    <span className="block text-indigo-200">customer support</span>
+                    <span className="block text-white">Start Shipping Today!</span>
                   </h1>
                   <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                    amet fugiat veniam occaecat fugiat aliqua.
+                  With one of our many blocks, you can easily integrate your default shipping methods such as GAPP Finder, Fed-Ex, UPS and Uber Eats.
                   </p>
-                  <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                    <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-accent bg-white hover:bg-indigo-50 sm:px-8"
-                      >
-                        Get started
-                      </a>
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-accent bg-opacity-60 hover:bg-opacity-70 sm:px-8"
-                      >
-                        Live demo
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -142,7 +124,7 @@ export default function ShippingMainCard() {
           <div className="bg-gray-100">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
               <p className="text-center text-base font-semibold text-gray-500">
-                Trusted by over 5 very average small businesses
+                Choose Your Preferred Way of Payment
               </p>
               <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
@@ -203,21 +185,18 @@ export default function ShippingMainCard() {
 
             <div className="relative">
               <h2 className="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-                A better way to send money
+                A better way to ship Products 
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in,
-                accusamus quisquam.
+              Shipping is a crucial part of your business, so we made sure shipping with GAPP Blocks is simple.
               </p>
             </div>
 
             <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
               <div className="relative">
-                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Transfer funds world-wide</h3>
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Start Now</h3>
                 <p className="mt-3 text-lg text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                  officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                  Totam, velit.
+                  Your GAPP Blocks account comes equipped with shipping capabilities so you can get started sending orders out as soon as you receive them. With easily modifiable defaults, you can charge consumers the right amount for shipping every time. 
                 </p>
               </div>
 
@@ -278,10 +257,9 @@ export default function ShippingMainCard() {
             <div className="relative mt-12 sm:mt-16 lg:mt-24">
               <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
                 <div className="lg:col-start-2">
-                  <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Always in the loop</h3>
+                  <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Works Seamlessly with GAPP Finder </h3>
                   <p className="mt-3 text-lg text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
-                    cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+                    With all online orders running through our platform, GAPP Blocks enables the sharing of customer orders between the GAPP Finder system for local deliveries and with 3rd-party logistics for distant deliveries. 
                   </p>
                 </div>
 
@@ -319,11 +297,9 @@ export default function ShippingMainCard() {
             </div>
             <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
               <div className="relative">
-                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Transfer funds world-wide</h3>
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">All in One Place</h3>
                 <p className="mt-3 text-lg text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                  officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                  Totam, velit.
+                  Shipping your products to customers is one of the most critical parts of your business. With GAPP Blocks, you can manage your items, customers and inventory all from the same location, which will make your day-to-day operations much simpler. 
                 </p>
               </div>
 
