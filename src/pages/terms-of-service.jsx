@@ -67,7 +67,7 @@ export default function termsOfService() {
                     Thank you for using services rendered by our site, <a className="text-accent" href="www.gappblocks.com">www.gappblocks.com</a> including linked domains integrated within the site (hereinafter together referred to as the “Site” or “Website”). These terms and conditions govern your access to and use of the Site and the services we offer (together “Services”). Please read them carefully before availing any of the Service we provide. The terms “we”, “us” or “our”, refer to the Site.
                     </p>
                 </div>
-                <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
+                <div className="prose prose-lg prose-indigo max-w-4xl mx-auto mt-6 text-gray-500">
                     {data.map((item, index) => (
                         <div key={index}>
                             <span className="mt-2 block text-xl font-bold leading-8 tracking-tight text-priamry sm:text-xl">
