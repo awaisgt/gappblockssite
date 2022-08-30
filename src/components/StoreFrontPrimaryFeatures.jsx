@@ -75,7 +75,7 @@ export function StoreFrontPrimaryFeatures() {
             Your store. Our technology. Endless possibilities.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            With GAPP Blocks, you can focus on growing your business. We take care of all the technicals, so you're free to focus on what you love most—widening your reach and widening your profit margins.
+            {"With GAPP Blocks, you can focus on growing your business. We take care of all the technicals, so you're free to focus on what you love most—widening your reach and widening your profit margins."}
           </p>
         </div>
         <Tab.Group
