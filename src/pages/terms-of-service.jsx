@@ -65,7 +65,7 @@ export default function termsOfService() {
                     <span className="block text-center text-lg font-semibold text-indigo-600">Terms Of Service</span>
                     </h1>
                     <p className="mt-8 text-xl leading-8 text-gray-500">
-                    Thank you for using services rendered by our site, <a className="text-accent" href="www.gappblocks.com">www.gappblocks.com</a> including linked domains integrated within the site (hereinafter together referred to as the “Site” or “Website”). These terms and conditions govern your access to and use of the Site and the services we offer (together “Services”). Please read them carefully before availing any of the Service we provide. The terms “we”, “us” or “our”, refer to the Site.
+                    Thank you for using services rendered by our site, <Link className="text-accent" href="www.gappblocks.com">www.gappblocks.com</Link> including linked domains integrated within the site (hereinafter together referred to as the “Site” or “Website”). These terms and conditions govern your access to and use of the Site and the services we offer (together “Services”). Please read them carefully before availing any of the Service we provide. The terms “we”, “us” or “our”, refer to the Site.
                     </p>
                 </div>
                 <div className="prose prose-lg prose-indigo max-w-4xl mx-auto mt-6 text-gray-500">
@@ -85,7 +85,7 @@ export default function termsOfService() {
                         Privacy And Data Protection
                     </span>
                     <p className="text-justify">
-                        GAPP Blocks is firmly committed to protecting the privacy of your personal information and the personal information of your customers. By using the Service, you acknowledge and agree that GAPP Blocks collection, usage and disclosure of this personal information is governed by our <a className="text-accent" href='/privacy-policy/'>privacy policy</a>
+                        GAPP Blocks is firmly committed to protecting the privacy of your personal information and the personal information of your customers. By using the Service, you acknowledge and agree that GAPP Blocks collection, usage and disclosure of this personal information is governed by our <Link className="text-accent" href='/privacy-policy/'>privacy policy</Link>
                     </p>
                     <p className="text-justify">
                         We are in compliance with the additional requirements for the restricted scope with Google Cloud Platform through which the App’s use of information received from Gmail APIs will adhere to Google&apos;s Limited Use Requirements.
