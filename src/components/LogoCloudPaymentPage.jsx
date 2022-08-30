@@ -187,7 +187,7 @@ export function LogoCloud1PaymentPage() {
             <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                     <h2 className="mx-auto max-w-md text-center text-3xl font-bold tracking-tight text-indigo-900 lg:max-w-xl lg:text-left">
-                        The world's most innovative companies use Workflow
+                        The world&rsquo;s most innovative companies use Workflow
                     </h2>
                     <div className="mt-8 flow-root self-center lg:mt-0">
                         <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
@@ -277,7 +277,7 @@ export function LogoCloud2PaymentPage() {
                 <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
                     <div>
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Used by the world's most average companies
+                            Used by the world&rsquo;s most average companies
                         </h2>
                         <p className="mt-3 max-w-3xl text-lg text-gray-500">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
