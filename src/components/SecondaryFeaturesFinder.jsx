@@ -42,7 +42,7 @@ function Feature({ feature, isActive, className, ...props }) {
 function FeaturesMobile(props) {
   return (
     <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
-      {props.features.map((feature) => (
+      {props.features && props.features.map((feature) => (
         <div key={feature.name}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
@@ -68,7 +68,7 @@ function FeaturesDesktop(props) {
       {({ selectedIndex }) => (
         <>
           <Tab.List className="grid grid-cols-3 gap-x-8">
-            {props.features.map((feature, featureIndex) => (
+            {props.features && props.features.map((feature, featureIndex) => (
               <Feature
                 key={feature.name}
                 feature={{

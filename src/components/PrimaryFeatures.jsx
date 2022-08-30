@@ -43,7 +43,7 @@ function FeaturesDesktop(props) {
       vertical
     >
       <Tab.List className="relative z-10 order-last col-span-6 space-y-6">
-        {props.features.map((feature, featureIndex) => (
+        {props.features && props.features.map((feature, featureIndex) => (
           <div
             key={feature.name}
             className="relative rounded-2xl transition-colors hover:bg-gray-800/30"
@@ -80,7 +80,7 @@ function FeaturesDesktop(props) {
               initial={false}
               custom={{ isForwards, changeCount }}
             >
-              {props.features.map((feature, featureIndex) =>
+              {props.features && props.features.map((feature, featureIndex) =>
                 selectedIndex === featureIndex ? (
                   <Tab.Panel
                     static
@@ -140,7 +140,7 @@ function FeaturesMobile(props) {
         ref={slideContainerRef}
         className="-mb-4 flex snap-x snap-mandatory -space-x-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [scrollbar-width:none] sm:-space-x-6 [&::-webkit-scrollbar]:hidden"
       >
-        {props.features.map((feature, featureIndex) => (
+        {props.features && props.features.map((feature, featureIndex) => (
           <div
             key={featureIndex}
             ref={(ref) => (slideRefs.current[featureIndex] = ref)}
@@ -170,7 +170,7 @@ function FeaturesMobile(props) {
         ))}
       </div>
       <div className="mt-6 flex justify-center gap-3">
-        {props.features.map((_, featureIndex) => (
+        {props.features && props.features.map((_, featureIndex) => (
           <button
             type="button"
             key={featureIndex}
