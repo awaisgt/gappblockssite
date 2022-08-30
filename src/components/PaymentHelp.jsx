@@ -1,9 +1,26 @@
-import {
-  SparklesIcon,
-} from '@heroicons/react/24/outline'
+import {InboxIcon, SparklesIcon,} from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
-export default function PaymentHelp() {
+function CustomerSupport(heading, content, buttonText, buttonLink) {
+  return(
+      <div className="mt-6">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900">{heading}</h2>
+        <p className="mt-4 text-lg text-gray-500">
+          {content}
+        </p>
+        <div className="mt-6">
+          <a
+              href={buttonLink}
+              className="inline-flex rounded-md border border-transparent bg-accent bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm"
+          >
+            {buttonText}
+          </a>
+        </div>
+      </div>
+  )
+}
+
+export default function PaymentHelp(props) {
   return (
     <>
       <div className="mt-24">
@@ -15,22 +32,7 @@ export default function PaymentHelp() {
                       <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
-                  <div className="mt-6">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                      Trouble finding what you’re looking for?
-                    </h2>
-                    <p className="mt-4 text-lg text-gray-500">
-                      Make a request to a GAPP Consultant for specialized assistance with the unique integration of the Shipping Method of your choosing, and the consultant will get back to you as soon as possible. 
-                    </p>
-                    <div className="mt-6">
-                      <Link
-                        href="/contact"
-                        className="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
-                      >
-                        We’re here to help
-                      </Link>
-                    </div>
-                  </div>
+                  {CustomerSupport(props.heading, props.content, props.buttonText, props.buttonLink)}
                 </div>
               </div>
               <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
@@ -63,5 +65,40 @@ export default function PaymentHelp() {
           </div>
         </div>
         </>
+  )
+}
+
+export function CustomerSupportPaymentPage(props) {
+  return (
+      <div className="relative overflow-hidden pt-16 pb-32">
+        <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"/>
+        <div className="relative">
+          <div
+              className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+            <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+              <div>
+                <div>
+                    <span
+                        className="flex h-12 w-12 items-center justify-center rounded-md bg-accent">
+                      <InboxIcon className="h-6 w-6 text-white" aria-hidden="true"/>
+                    </span>
+                </div>
+                {CustomerSupport(props.heading, props.content, props.buttonText, props.buttonLink)}
+              </div>
+              <div className="mt-8 border-t border-gray-200 pt-6">
+              </div>
+            </div>
+            <div className="mt-12 sm:mt-16 lg:mt-0">
+              <div className="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                <img
+                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                    src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
+                    alt="Inbox user interface"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   )
 }

@@ -11,6 +11,7 @@ import {
     TrashIcon,
     UsersIcon,
 } from '@heroicons/react/24/outline'
+import {ArrowTopRightOnSquareIcon} from "@heroicons/react/20/solid";
 
 const solutions = [
     {
@@ -219,49 +220,32 @@ export function LogoCloud1PaymentPage() {
 
 export function AlternatingFeatureSection() {
     return (
-        <div className="relative overflow-hidden pt-16 pb-32">
-            <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"/>
-            <div className="relative">
-                <div
-                    className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-                    <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
-                        <div>
-                            <div>
-                    <span
-                        className="flex h-12 w-12 items-center justify-center rounded-md bg-accent">
-                      <InboxIcon className="h-6 w-6 text-white" aria-hidden="true"/>
-                    </span>
-                            </div>
-                            <div className="mt-6">
-                                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Stay on top of customer
-                                    support</h2>
-                                <p className="mt-4 text-lg text-gray-500">
-                                    Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada
-                                    faucibus lacinia
-                                    porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                                    pharetra at.
-                                    Lectus viverra dui tellus ornare pharetra.
-                                </p>
-                                <div className="mt-6">
-                                    <a
-                                        href="#"
-                                        className="inline-flex rounded-md border border-transparent bg-accent bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm"
-                                    >
-                                        Get started
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mt-8 border-t border-gray-200 pt-6">
-                        </div>
-                    </div>
-                    <div className="mt-12 sm:mt-16 lg:mt-0">
-                        <div className="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                            <img
-                                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
-                                alt="Inbox user interface"
-                            />
+        <div className="relative bg-gray-800">
+            <div className="h-56 bg-accent sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+                <img
+                    className="w-full h-full object-cover"
+                    src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
+                    alt=""
+                />
+            </div>
+            <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+                <div className="md:ml-auto md:w-1/2 md:pl-10">
+                    <h2 className="text-lg font-semibold text-gray-300">Award winning support</h2>
+                    <p className="mt-2 text-white text-3xl font-bold tracking-tight sm:text-4xl">We&rsquo;re here to help</p>
+                    <p className="mt-3 text-lg text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a
+                        scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum
+                        tincidunt duis.
+                    </p>
+                    <div className="mt-8">
+                        <div className="inline-flex rounded-md shadow">
+                            <a
+                                href="#"
+                                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                            >
+                                Visit the help center
+                                <ArrowTopRightOnSquareIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            </a>
                         </div>
                     </div>
                 </div>
