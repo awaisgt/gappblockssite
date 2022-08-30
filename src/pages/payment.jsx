@@ -8,12 +8,20 @@ import {
     LogoCloud2PaymentPage
 } from "@/components/LogoCloudPaymentPage";
 
+const HeroSectionHeadingContent = {
+  Heading1: "Simple payment, anytime. Anywhere.",
+}
+const HeroSectionInnerContent = {
+  pContent:"Connect your default payment and delivery methods, such as Stripe, PayPal, Square, and others, by making use of one of our many available blocks."
+}
+
+
 export default function Payment() {
 
     return (
       <>
       <Header/>
-      <HeroSection/>
+      <HeroSection headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
       <LogoCloud1PaymentPage/>
       <AlternatingFeatureSection/>
       <LogoCloud2PaymentPage/>
