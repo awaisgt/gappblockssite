@@ -141,7 +141,6 @@ const bodyVariantBackwards = {
   scale: 0.8,
   zIndex: 0,
   filter: 'blur(4px)',
-  zIndex: 0,
   transition: { duration: 0.4 },
 }
 
@@ -450,7 +449,9 @@ const primaryFeatures = [
 
 const CallToActionContent = {
   Heading:"Start Deploying Your Delivery Fleet",
-  innerContent:"You may begin adding your delivery drivers as soon as you select any plan that includes GAPP Finder Basic or GAPP Finder Plus."
+  innerContent:"You may begin adding your delivery drivers as soon as you select any plan that includes GAPP Finder Basic or GAPP Finder Plus.",
+  buttonText: "Sign Up Today",
+  buttonLink: "pricing",
 }
 
 

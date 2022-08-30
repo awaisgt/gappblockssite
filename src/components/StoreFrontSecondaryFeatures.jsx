@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Track Order',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Your native app allows your consumers to track your orders. With an Uber-like interface, your customers can now track and review their order status and delivery driver\'s location in real time.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'Instant Notifications',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'With real-time instant notifications, your clients will never be unaware of the status of their order. Communicate with your customers in real-time and conduct promotional campaigns instantly.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'Manage using CMS',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'GAPP Blocks Content Management System was created to manage mobile applications. Using our user-friendly CMS, you can add, remove, and modify your products and adjust the look of your application.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'Secure Payments',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Whether you use one of our numerous available plug-ins to integrate your default shipping methods like Apple Pay, Google Pay, Stripe, PayPal, Square, etc., or you request a GAPP Consultant for custom integration.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'Performance Insights',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Learn vital information about your consumers, such as the average amount spent each order and the frequency and nature of their purchases. Such information can be utilized for customized marketing campaigns.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'App Publishing',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'Deliver your app to the Apple App Store or Google Play Store with the help of GAPP Consultants. GAPP Blocks and GAPP Consultants can handle your entire build, deploy and submit process, so you can focus on what matters most — building out great features for your users.',
     icon: DeviceChartIcon,
   },
 ]
@@ -135,11 +135,10 @@ export function StoreFrontSecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+              Make a better impact with mobile
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+              Designed to be powerful, yet simple, GAPP Blocks give organizations the ability to create mobile applications that are native to the phone they&apos;re designed for
           </p>
         </div>
         <ul

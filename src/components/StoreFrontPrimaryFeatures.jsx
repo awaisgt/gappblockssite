@@ -12,27 +12,27 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Website',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "Make storefront instantly without having to learn how to code, and publish it on your own personalized domain name, such as www.yourcompany.com.",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Manage Orders',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "Manage orders originating from your storefront or add orders manually. Admin Panel allows users to view invoices, order details, status history, and accept or reject orders.",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Manage Products',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "Using the admin panel, you can add, update, delete, and deactivate items, as well as manage product variants and add Ons.",
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'Compile Customized Apps',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Change the app\'s icon, splash screen, primary logo, and colors directly from the admin panel. No coding needed!',
     image: screenshotReporting,
   },
 ]
@@ -72,11 +72,10 @@ export function StoreFrontPrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Your store. Our technology. Endless possibilities.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            With GAPP Blocks, you can focus on growing your business. We take care of all the technicals, so you're free to focus on what you love most—widening your reach and widening your profit margins.
           </p>
         </div>
         <Tab.Group

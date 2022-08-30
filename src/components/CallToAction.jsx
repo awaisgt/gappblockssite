@@ -1,6 +1,7 @@
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
+import {Button} from "@/components/Button";
 
 export function CallToAction(props) {
   return (
@@ -17,10 +18,12 @@ export function CallToAction(props) {
           {props.content ? props.content.Heading : ""}
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-          {props.content ? props.content.innerContent : ""} 
+          {props.content ? props.content.innerContent : ""}
           </p>
           <div className="mt-8 flex justify-center">
-            <AppStoreLink color="white" />
+              <Button href={props.content ? props.content.buttonLink : ""} color="white" className="text-black">
+                {props.content ? props.content.buttonText : ""}
+              </Button>
           </div>
         </div>
       </Container>

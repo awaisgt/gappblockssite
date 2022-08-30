@@ -5,6 +5,12 @@ import { StoreFrontHero } from "@/components/StoreFrontHero";
 import { StoreFrontPrimaryFeatures } from "@/components/StoreFrontPrimaryFeatures";
 import { StoreFrontSecondaryFeatures } from "@/components/StoreFrontSecondaryFeatures";
 
+const CallToActionContent = {
+    Heading:"Build Apps In Minutes!",
+    innerContent:"Make beautiful m-commerce apps in a flash for your customers without learning to code.",
+    buttonText: "Start Now",
+    buttonLink: "pricing",
+}
 export default function storefront() {
 
     return (
@@ -14,7 +20,7 @@ export default function storefront() {
         <StoreFrontHero/>
         <StoreFrontSecondaryFeatures/>
         <StoreFrontPrimaryFeatures/>
-        <CallToAction/>
+        <CallToAction content={CallToActionContent}/>
         </main>
         <Footer/>
         </>
