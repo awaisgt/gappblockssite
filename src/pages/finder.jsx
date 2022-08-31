@@ -460,7 +460,7 @@ export default function Register() {
     return (
       <>
       <Header/>
-      <HeroSection headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
+      <HeroSection secondaryHidden={false} headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
       <PrimaryFeatures content={PrimaryFeaturesContent} features={primaryFeatures}/>
       <SecondaryFeaturesFinder content={SecondaryFeaturesContent} features={secondaryFeatures}/>
       <CallToAction content={CallToActionContent}/>

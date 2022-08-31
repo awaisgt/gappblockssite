@@ -36,7 +36,7 @@ export default function HeroSection(props) {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="https://www.youtube.com/watch?v=XFIVGcBnSQE&t=1s"
-                  className="hidden w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-accent bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                  className={`${props.secondaryHidden ? "hidden" : ""} w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-accent bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10`}
                 >
                   Live demo
                   </a>

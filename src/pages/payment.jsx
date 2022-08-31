@@ -21,7 +21,7 @@ export default function Payment() {
     return (
       <>
       <Header/>
-      <HeroSection headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
+      <HeroSection secondaryHidden={true} headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
       <LogoCloud1PaymentPage/>
       <AlternatingFeatureSection/>
       <LogoCloud2PaymentPage/>
