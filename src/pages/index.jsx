@@ -77,7 +77,7 @@ const primaryFeatures = [
   {
     name: 'Storefront',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+      'Create stunning e-Commerce apps without a single line of code — giving you full control of your app and its look, feel and functionality.',
     icon: function DeviceTouchIcon(props) {
       let id = useId()
     
@@ -173,7 +173,7 @@ const primaryFeatures = [
   {
     name: 'Live Tracking',
     description: 
-      "For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it's 10 seconds if you invite an insider.",
+      "Give your customers an Uber-like experience by using GAPP Finder to track their delivery in real-time.",
     icon: function DeviceUserIcon(props) {
       return (
         <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
@@ -230,7 +230,7 @@ const primaryFeatures = [
   {
     name: 'Push Notifications',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+      'Communicate with your customers in real-time instant notifications, your clients will never be unaware of the status of their order.',
     icon: function DeviceNotificationIcon(props) {
       return (
         <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
