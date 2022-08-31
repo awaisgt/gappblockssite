@@ -12,6 +12,7 @@ import {
     UsersIcon,
 } from '@heroicons/react/24/outline'
 import {ArrowTopRightOnSquareIcon} from "@heroicons/react/20/solid";
+import Link from 'next/link'
 
 const solutions = [
     {
@@ -188,7 +189,7 @@ export function LogoCloud1PaymentPage() {
             <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                     <h2 className="mx-auto max-w-md text-center text-3xl font-bold tracking-tight text-accent lg:max-w-xl lg:text-left">
-                        The world&rsquo;s most innovative companies use Workflow
+                        Choose Your Preferred Way of Payment  
                     </h2>
                     <div className="mt-8 flow-root self-center lg:mt-0">
                         <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
@@ -230,20 +231,17 @@ export function AlternatingFeatureSection() {
             </div>
             <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
                 <div className="md:ml-auto md:w-1/2 md:pl-10">
-                    <h2 className="text-lg font-semibold text-gray-300">Award winning support</h2>
-                    <p className="mt-2 text-white text-3xl font-bold tracking-tight sm:text-4xl">We&rsquo;re here to help</p>
+                    <p className="mt-2 text-white text-3xl font-bold tracking-tight sm:text-3xl">Simplify your checkout process.</p>
                     <p className="mt-3 text-lg text-gray-300">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a
-                        scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum
-                        tincidunt duis.
+                        GAPP Blocks is a scalable, easy-to-use and fast way to set up merchants with an eCommerce store. Now you can sell anywhere without the hassle of third-party payment gateways: just integrate once, get your store set up and selling in one click, and enjoy easy payment processing for any mobile device or desktop. 
                     </p>
                     <div className="mt-8">
                         <div className="inline-flex rounded-md shadow">
                             <a
-                                href="#"
+                                href=".pricing"
                                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
                             >
-                                Visit the help center
+                                Start Now
                                 <ArrowTopRightOnSquareIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
                             </a>
                         </div>
@@ -261,29 +259,27 @@ export function LogoCloud2PaymentPage() {
                 <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
                     <div>
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Used by the world&rsquo;s most average companies
+                            A friendly checkout experience 
                         </h2>
                         <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-                            sed. Quam a
-                            scelerisque amet ullamcorper eu enim et fermentum, augue.
+                            Choosing between different payment methods and currencies for your site can be hard, so GAPP Blocks gives you a simplified checkout experience. Choose from the most common payment methods and currencies in your area to ensure a pleasant checkout experience. 
                         </p>
                         <div className="mt-8 sm:flex">
                             <div className="rounded-md shadow">
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/pricing"
                                     className="flex items-center justify-center rounded-md border border-transparent bg-accent px-5 py-3 text-base font-medium text-white"
                                 >
-                                    Create Account
-                                </a>
+                                    Start Now
+                                </Link>
                             </div>
                             <div className="mt-3 sm:mt-0 sm:ml-3">
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/contact"
                                     className="flex items-center justify-center rounded-md border border-transparent bg-indigo-50 px-5 py-3 text-base font-medium text-accent"
                                 >
                                     Contact Us
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
