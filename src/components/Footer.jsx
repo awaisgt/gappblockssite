@@ -20,8 +20,6 @@ import InstagramIcon from '@/images/logos/instagram.svg'
 import FacebookIcon from '@/images/logos/facebook.svg'
 import YouTubeIcon from '@/images/logos/youtube.svg'
 
-import { Image } from 'next/future/image'
-
 const navigation = {
   services: [
     { name: 'Storefront', href: 'storefront' },
@@ -190,7 +188,7 @@ export function Footer() {
           <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
             <div className="flex space-x-6 md:order-2">
               {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                  <a key={item.name} href={item.href} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">{item.name}</span>
                     <item.icon className="h-6 w-6" aria-hidden="true" />
                   </a>

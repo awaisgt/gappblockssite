@@ -27,3 +27,7 @@
   --accent: #54AACE;
   --primary: #414141;
 }
+
+.contact-icon svg {
+  fill: red;
+}
