@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
@@ -19,6 +20,7 @@ import {
   TransistorLogo,
   TupleLogo,
 } from '@/components/StockLogos'
+import storefront from "@/images/screens/storefront.png"
 
 
 const headerAnimation = {
@@ -120,51 +122,8 @@ const primaryFeatures = [
     screen: function InvestScreen({ custom, animated = false }) {
       return (
         <AppScreen className="w-full">
-          <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-            <AppScreen.Title>Buy $LA</AppScreen.Title>
-            <AppScreen.Subtitle>
-              <span className="text-white">$34.28</span> per share
-            </AppScreen.Subtitle>
-          </MotionAppScreenHeader>
           <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-            <div className="px-4 py-6">
-              <div className="space-y-4">
-                {[
-                  { label: 'Number of shares', value: '100' },
-                  {
-                    label: 'Current market price',
-                    value: (
-                      <div className="flex">
-                        $34.28
-                        <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
-                          <path
-                            d="M17 15V7H9M17 7 7 17"
-                            stroke="#06B6D4"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    ),
-                  },
-                  { label: 'Estimated cost', value: '$3,428.00' },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex justify-between border-b border-gray-100 pb-4"
-                  >
-                    <div className="text-sm text-gray-500">{item.label}</div>
-                    <div className="text-sm font-semibold text-gray-900">
-                      {item.value}
-                    </div>
-                  </div>
-                ))}
-                <div className="rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-                  Buy shares
-                </div>
-              </div>
-            </div>
+            <img src={storefront.src} alt="Storefront" />
           </MotionAppScreenBody>
         </AppScreen>
       )
