@@ -351,10 +351,10 @@ export function Hero() {
             solution to kickstart your journey of success.    
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <Button href="#" className="hidden lg:block">
+              <Button href="/pricing" className="hidden lg:block">
                 GET STARTED
               </Button>
-              <Button
+              <Button className="hidden"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 variant="outline"
               >

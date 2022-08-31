@@ -122,7 +122,7 @@ export function Header() {
                             <Button href="https://admin.gapp.pk" variant="outline">
                               Sign In
                             </Button>
-                            <Button href="#">Sign Up</Button>
+                            <Button href="/pricing">Sign Up</Button>
                           </div>
                         </Popover.Panel>
                       </>
@@ -134,7 +134,7 @@ export function Header() {
             <Button href="https://admin.gapp.pk" variant="outline" className="hidden lg:block">
               Sign In
             </Button>
-            <Button href="#" className="hidden lg:block">
+            <Button href="/pricing" className="hidden lg:block">
               Sign Up
             </Button>
           </div>

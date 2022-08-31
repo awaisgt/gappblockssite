@@ -8,7 +8,7 @@ import { StoreFrontSecondaryFeatures } from "@/components/StoreFrontSecondaryFea
 const CallToActionContent = {
     Heading:"Build Apps In Minutes!",
     innerContent:"Make beautiful m-commerce apps in a flash for your customers without learning to code.",
-    buttonText: "Start Now",
+    buttonText: "Get Started",
     buttonLink: "pricing",
 }
 export default function storefront() {

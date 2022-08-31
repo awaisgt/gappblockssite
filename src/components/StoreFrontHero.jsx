@@ -341,12 +341,15 @@ export function StoreFrontHero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Build Apps In Minutes, Not Months!
+              Build Apps In Minutes, <br/>Not Months!
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               Build beautiful and powerful m-commerce apps without learning to code. GAPP Blocks makes it easy for you to create engaging, user-friendly apps for your customers.
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+            <Button href="/pricing" className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+                GET STARTED
+              </Button>
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4 hidden">
               <AppStoreLink />
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
