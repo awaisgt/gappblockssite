@@ -5,8 +5,6 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 
 
-
-
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div

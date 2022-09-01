@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 
 import HeroSection from "@/components/HeroSection"
 import { useId } from 'react'
@@ -6,22 +7,15 @@ import { PrimaryFeatures } from "@/components/PrimaryFeatures"
 import { CallToAction } from "@/components/CallToAction"
 import { Footer } from "@/components/Footer"
 import { SecondaryFeaturesFinder }  from "@/components/SecondaryFeaturesFinder"
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
-import clsx from 'clsx'
+import screenshotContacts from '@/images/screens/finder-track-driver.png'
+import screenshotInventory from '@/images/screens/finder-set-commission.png'
+import screenshotProfitLoss from '@/images/screens/finder-manage-drivers.png'
 import { motion } from 'framer-motion'
 import { AppScreen } from '@/components/AppScreen'
-import {
-  DiageoLogo,
-  LaravelLogo,
-  MirageLogo,
-  ReversableLogo,
-  StatamicLogo,
-  StaticKitLogo,
-  TransistorLogo,
-  TupleLogo,
-} from '@/components/StockLogos'
+
+import myEarnings from '@/images/screens/finder-my-earnings.png'
+import manageOrders from '@/images/screens/finder-manage-orders.png'
+import easyNavigation from '@/images/screens/finder-easy-navigation.png'
 
 const HeroSectionHeadingContent = {
   Heading1: "GAPP Finder",
@@ -125,14 +119,7 @@ const secondaryFeatures = [
   },
 },
 ]
-const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
-
-const headerAnimation = {
-  initial: { opacity: 0, transition: { duration: 0.3 } },
-  animate: { opacity: 1, transition: { duration: 0.3, delay: 0.3 } },
-  exit: { opacity: 0, transition: { duration: 0.3 } },
-}
 
 const maxZIndex = 2147483647
 
@@ -217,51 +204,8 @@ const primaryFeatures = [
     screen: function InvestScreen({ custom, animated = false }) {
       return (
         <AppScreen className="w-full">
-          <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-            <AppScreen.Title>Buy $LA</AppScreen.Title>
-            <AppScreen.Subtitle>
-              <span className="text-white">$34.28</span> per share
-            </AppScreen.Subtitle>
-          </MotionAppScreenHeader>
           <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-            <div className="px-4 py-6">
-              <div className="space-y-4">
-                {[
-                  { label: 'Number of shares', value: '100' },
-                  {
-                    label: 'Current market price',
-                    value: (
-                      <div className="flex">
-                        $34.28
-                        <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
-                          <path
-                            d="M17 15V7H9M17 7 7 17"
-                            stroke="#06B6D4"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    ),
-                  },
-                  { label: 'Estimated cost', value: '$3,428.00' },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex justify-between border-b border-gray-100 pb-4"
-                  >
-                    <div className="text-sm text-gray-500">{item.label}</div>
-                    <div className="text-sm font-semibold text-gray-900">
-                      {item.value}
-                    </div>
-                  </div>
-                ))}
-                <div className="rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-                  Buy shares
-                </div>
-              </div>
-            </div>
+            <img src={easyNavigation.src} alt="Finder - Easy Navigation" />
           </MotionAppScreenBody>
         </AppScreen>
       )
@@ -293,32 +237,8 @@ const primaryFeatures = [
     screen: function InviteScreen({ custom, animated = false }) {
       return (
         <AppScreen className="w-full">
-          <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-            <AppScreen.Title>Invite people</AppScreen.Title>
-            <AppScreen.Subtitle>
-              Get tips <span className="text-white">5s sooner</span> for every
-              invite.
-            </AppScreen.Subtitle>
-          </MotionAppScreenHeader>
           <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-            <div className="px-4 py-6">
-              <div className="space-y-6">
-                {[
-                  { label: 'Full name', value: 'Albert H. Wiggin' },
-                  { label: 'Email address', value: 'awiggin@chase.com' },
-                ].map((field) => (
-                  <div key={field.label}>
-                    <div className="text-sm text-gray-500">{field.label}</div>
-                    <div className="mt-2 border-b border-gray-200 pb-2 text-sm text-gray-900">
-                      {field.value}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6 rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-                Invite person
-              </div>
-            </div>
+            <img src={myEarnings.src} alt="Finder - Track Earnings" />
           </MotionAppScreenBody>
         </AppScreen>
       )
@@ -347,99 +267,10 @@ const primaryFeatures = [
     },
     screen: function StocksScreen({ custom, animated = false }) {
       return (
+        
         <AppScreen className="w-full">
-          <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-            <AppScreen.Title>Stocks</AppScreen.Title>
-            <AppScreen.Subtitle>March 9, 2022</AppScreen.Subtitle>
-          </MotionAppScreenHeader>
           <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-            <div className="divide-y divide-gray-100">
-              {[
-                {
-                  name: 'Laravel',
-                  price: '4,098.01',
-                  change: '+4.98%',
-                  color: '#F9322C',
-                  logo: LaravelLogo,
-                },
-                {
-                  name: 'Tuple',
-                  price: '5,451.10',
-                  change: '-3.38%',
-                  color: '#5A67D8',
-                  logo: TupleLogo,
-                },
-                {
-                  name: 'Transistor',
-                  price: '4,098.41',
-                  change: '+6.25%',
-                  color: '#2A5B94',
-                  logo: TransistorLogo,
-                },
-                {
-                  name: 'Diageo',
-                  price: '250.65',
-                  change: '+1.25%',
-                  color: '#3320A7',
-                  logo: DiageoLogo,
-                },
-                {
-                  name: 'StaticKit',
-                  price: '250.65',
-                  change: '-3.38%',
-                  color: '#2A3034',
-                  logo: StaticKitLogo,
-                },
-                {
-                  name: 'Statamic',
-                  price: '5,040.85',
-                  change: '-3.11%',
-                  color: '#0EA5E9',
-                  logo: StatamicLogo,
-                },
-                {
-                  name: 'Mirage',
-                  price: '140.44',
-                  change: '+9.09%',
-                  color: '#16A34A',
-                  logo: MirageLogo,
-                },
-                {
-                  name: 'Reversable',
-                  price: '550.60',
-                  change: '-1.25%',
-                  color: '#8D8D8D',
-                  logo: ReversableLogo,
-                },
-              ].map((stock) => (
-                <div key={stock.name} className="flex items-center gap-4 px-4 py-3">
-                  <div
-                    className="flex-none rounded-full"
-                    style={{ backgroundColor: stock.color }}
-                  >
-                    <stock.logo className="h-10 w-10" />
-                  </div>
-                  <div className="flex-auto text-sm text-gray-900">
-                    {stock.name}
-                  </div>
-                  <div className="flex-none text-right">
-                    <div className="text-sm font-medium text-gray-900">
-                      {stock.price}
-                    </div>
-                    <div
-                      className={clsx(
-                        'text-xs leading-5',
-                        stock.change.startsWith('+')
-                          ? 'text-cyan-500'
-                          : 'text-gray-500'
-                      )}
-                    >
-                      {stock.change}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <img src={manageOrders.src} alt="Finder - Manage Orders" />
           </MotionAppScreenBody>
         </AppScreen>
       )
@@ -460,10 +291,10 @@ export default function Register() {
     return (
       <>
       <Header/>
-      <HeroSection secondaryHidden={false} headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
-      <PrimaryFeatures content={PrimaryFeaturesContent} features={primaryFeatures}/>
-      <SecondaryFeaturesFinder content={SecondaryFeaturesContent} features={secondaryFeatures}/>
-      <CallToAction content={CallToActionContent}/>
-     <Footer/>
+        <HeroSection secondaryHidden={false} headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
+        <PrimaryFeatures content={PrimaryFeaturesContent} features={primaryFeatures}/>
+        <SecondaryFeaturesFinder content={SecondaryFeaturesContent} features={secondaryFeatures}/>
+        <CallToAction content={CallToActionContent}/>
+      <Footer/>
       </>
     )}

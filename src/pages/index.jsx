@@ -9,15 +9,9 @@ import { Newsletter } from '@/components/Newsletter'
 import { AppScreen } from '@/components/AppScreen'
 import { motion } from 'framer-motion'
 import { useId } from 'react'
-import storefront from "@/images/screens/storefront.png"
-import notification from "@/images/screens/notification.png"
-
-
-const headerAnimation = {
-  initial: { opacity: 0, transition: { duration: 0.3 } },
-  animate: { opacity: 1, transition: { duration: 0.3, delay: 0.3 } },
-  exit: { opacity: 0, transition: { duration: 0.3 } },
-}
+import storefront from "@/images/screens/home-storefront.png"
+import notification from "@/images/screens/home-push-notifications.png"
+import liveTracking from "@/images/screens/home-live-tracking.png"
 
 const maxZIndex = 2147483647
 
@@ -56,7 +50,6 @@ const bodyAnimation = {
   },
 }
 
-const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
 
 
@@ -145,32 +138,8 @@ const primaryFeatures = [
     screen: function InviteScreen({ custom, animated = false }) {
       return (
         <AppScreen className="w-full">
-          <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-            <AppScreen.Title>Invite people</AppScreen.Title>
-            <AppScreen.Subtitle>
-              Get tips <span className="text-white">5s sooner</span> for every
-              invite.
-            </AppScreen.Subtitle>
-          </MotionAppScreenHeader>
           <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-            <div className="px-4 py-6">
-              <div className="space-y-6">
-                {[
-                  { label: 'Full name', value: 'Albert H. Wiggin' },
-                  { label: 'Email address', value: 'awiggin@chase.com' },
-                ].map((field) => (
-                  <div key={field.label}>
-                    <div className="text-sm text-gray-500">{field.label}</div>
-                    <div className="mt-2 border-b border-gray-200 pb-2 text-sm text-gray-900">
-                      {field.value}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6 rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-                Invite person
-              </div>
-            </div>
+            <img src={liveTracking.src} alt="Live Tracking" />
           </MotionAppScreenBody>
         </AppScreen>
       )
@@ -199,7 +168,6 @@ const primaryFeatures = [
     },
     screen: function StocksScreen({ custom, animated = false }) {
       return (
-        
         <AppScreen className="w-full">
           <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
             <img src={notification.src} alt="notification" />
