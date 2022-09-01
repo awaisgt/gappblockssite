@@ -13,6 +13,18 @@ import {
 } from '@heroicons/react/24/outline'
 import {ArrowTopRightOnSquareIcon} from "@heroicons/react/20/solid";
 import Link from 'next/link'
+import ApplePayLogo from '@/images/payments-logo/1-apple-pay.png'
+import GooglePay from '@/images/payments-logo/2-google-pay.png'
+import MasterCard from '@/images/payments-logo/3-master-card.png'
+import Visa from '@/images/payments-logo/4-visa-logo.png'
+import Ax from '@/images/payments-logo/5-ax-logo.png'
+import Discover from '@/images/payments-logo/6-discover.png'
+
+import PayPalLogo from '@/images/payments-logo/paypal-logo.png'
+import SquareLogo from '@/images/payments-logo/square-logo.png'
+import StripeLogo from '@/images/payments-logo/stripe-logo.png'
+
+import SimplifyCheckout from '@/images/payment.png'
 
 const solutions = [
     {
@@ -197,18 +209,18 @@ export function LogoCloud1PaymentPage() {
                                 className="mt-4 ml-8 flex flex-shrink-0 flex-grow justify-center lg:ml-4 lg:flex-grow-0">
                                 <img
                                     className="h-12"
-                                    src="https://tailwindui.com/img/logos/workcation-logo-indigo-900.svg"
+                                    src={PayPalLogo.src}
                                     alt="Workcation"
                                 />
                             </div>
                             <div
                                 className="mt-4 ml-8 flex flex-shrink-0 flex-grow justify-center lg:ml-4 lg:flex-grow-0">
-                                <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-900.svg"
+                                <img className="h-12" src={SquareLogo.src}
                                      alt="Tuple"/>
                             </div>
                             <div
                                 className="mt-4 ml-8 flex flex-shrink-0 flex-grow justify-center lg:ml-4 lg:flex-grow-0">
-                                <img className="h-12" src="https://tailwindui.com/img/logos/level-logo-indigo-900.svg"
+                                <img className="h-12" src={StripeLogo.src}
                                      alt="Level"/>
                             </div>
                         </div>
@@ -224,8 +236,8 @@ export function AlternatingFeatureSection() {
         <div className="relative bg-gray-800">
             <div className="h-56 bg-accent sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
                 <img
-                    className="w-full h-full object-cover"
-                    src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
+                    className="filter-blue w-full h-full object-cover"
+                    src={SimplifyCheckout.src}
                     alt=""
                 />
             </div>
@@ -287,36 +299,36 @@ export function LogoCloud2PaymentPage() {
                         <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <img
                                 className="max-h-12"
-                                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+                                src={ApplePayLogo.src}
                                 alt="Workcation"
                             />
                         </div>
                         <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-                            <img className="max-h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+                            <img className="max-h-12" src={GooglePay.src}
                                  alt="Mirage"/>
                         </div>
                         <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-                            <img className="max-h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                            <img className="max-h-12" src={MasterCard.src}
                                  alt="Tuple"/>
                         </div>
                         <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <img
                                 className="max-h-12"
-                                src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg"
+                                src={Visa.src}
                                 alt="Laravel"
                             />
                         </div>
                         <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <img
                                 className="max-h-12"
-                                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                                src={Ax.src}
                                 alt="StaticKit"
                             />
                         </div>
                         <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
                             <img
                                 className="max-h-12"
-                                src="https://tailwindui.com/img/logos/statamic-logo-gray-400.svg"
+                                src={Discover.src}
                                 alt="Statamic"
                             />
                         </div>
