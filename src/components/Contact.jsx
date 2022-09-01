@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 import LinkedInIcon from '@/images/logos/linkedin.svg'
 import InstagramIcon from '@/images/logos/instagram.svg'
@@ -147,8 +148,7 @@ export function Contact() {
               </div>
               <h3 className="text-lg font-medium text-white">Contact information</h3>
               <p className="mt-6 text-base text-indigo-50 max-w-3xl">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                lacus arcu.
+                Within 24 hours, one of our GAPP Consultants will contact you to assist you with your existing account or with the selection of the appropriate package.
               </p>
               <dl className="mt-8 space-y-6">
                 <dt>
@@ -156,14 +156,14 @@ export function Contact() {
                 </dt>
                 <dd className="flex text-base text-indigo-50">
                   <PhoneIcon className="flex-shrink-0 w-6 h-6 text-indigo-200" aria-hidden="true" />
-                  <span className="ml-3">+1 (555) 123-4567</span>
+                  <Link className="ml-3" href="tel:+14156620387">+1 (415) 662 0387</Link>
                 </dd>
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
                 <dd className="flex text-base text-indigo-50">
                   <EnvelopeIcon className="flex-shrink-0 w-6 h-6 text-indigo-200" aria-hidden="true" />
-                  <span className="ml-3">support@workcation.com</span>
+                  <Link className="ml-3" href="mailto:info@gappblocks.com">info@gappblocks.com</Link>
                 </dd>
               </dl>
               <ul role="list" className="mt-8 flex space-x-12">
@@ -298,8 +298,7 @@ export function Contact() {
           <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Sales Support</h2>
           <div className="mt-3">
             <p className="text-lg text-gray-500">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-              lacus arcu.
+              Get assistance with your purchase by calling our support line. Our sales staff will guide you in the selection of the plan that is most suitable for your company.
             </p>
           </div>
           <div className="mt-9">
@@ -308,7 +307,7 @@ export function Contact() {
                 <PhoneIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
               </div>
               <div className="ml-3 text-base text-gray-500">
-                <p>+1 (555) 123 4567</p>
+                <Link href="tel:+14156620386">+1 (415) 662 0387</Link>
                 <p className="mt-1">Mon-Fri 8am to 6pm PST</p>
               </div>
             </div>
@@ -317,17 +316,16 @@ export function Contact() {
                 <EnvelopeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
               </div>
               <div className="ml-3 text-base text-gray-500">
-                <p>support@example.com</p>
+                <Link href="mailto:sales@gappblocks.com">sales@gappblocks.com</Link>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-12 sm:mt-16 md:mt-0">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Technical Support</h2>
+          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Technical Consultancy</h2>
           <div className="mt-3">
             <p className="text-lg text-gray-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat error corporis doloribus
-              similique, voluptatibus numquam quam, quae officiis facilis.
+              Get in contact with one of our GAPP Consultants in order to receive the finest assistance, regardless of whether you are trying to create a new block or integrate an existing one.
             </p>
           </div>
           <div className="mt-9">
@@ -336,7 +334,7 @@ export function Contact() {
                 <PhoneIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
               </div>
               <div className="ml-3 text-base text-gray-500">
-                <p>+1 (555) 123 4567</p>
+                <Link href="tel:+14156620386">+1 (415) 662 0387</Link>
                 <p className="mt-1">Mon-Fri 8am to 6pm PST</p>
               </div>
             </div>
@@ -345,7 +343,7 @@ export function Contact() {
                 <EnvelopeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
               </div>
               <div className="ml-3 text-base text-gray-500">
-                <p>support@example.com</p>
+                <Link href="sales@gappblocks.com">consult@gappblocks.com</Link>
               </div>
             </div>
           </div>
