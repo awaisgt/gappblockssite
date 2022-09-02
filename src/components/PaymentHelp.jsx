@@ -29,7 +29,7 @@ export default function PaymentHelp(props) {
               <div className="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
                 <div>
                   <div>
-                    <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-md bg-accent">
                       <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
