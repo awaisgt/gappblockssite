@@ -12,6 +12,7 @@ import { useId } from 'react'
 import storefront from "@/images/screens/home-storefront.png"
 import notification from "@/images/screens/home-push-notifications.png"
 import liveTracking from "@/images/screens/home-live-tracking.png"
+import Head from "next/head"
 
 const maxZIndex = 2147483647
 
@@ -182,6 +183,13 @@ const primaryFeatures = [
 export default function Home() {
   return (
     <>
+      <Head>
+          <title>Home | GAPP Blocks</title>
+          <meta
+              name="description"
+              content="We have got all the tools to turn your e-commerce ideas into reality.GAPP Blocks presents you with an easy no-code solution to kickstart your journey of success."
+          />
+      </Head>
       <Header />
       <main>
         <Hero />
