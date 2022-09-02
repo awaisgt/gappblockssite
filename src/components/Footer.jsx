@@ -33,7 +33,7 @@ const navigation = {
     { name: 'Contact Us', href: 'contact' },
   ],
   company: [
-    { name: 'Blog', href: '#' },
+    { name: 'Blog', href: 'blog' },
     { name: 'Privacy Policy', href: 'privacy-policy' },
     { name: 'Terms of Service', href: 'terms-of-service' },
   ],

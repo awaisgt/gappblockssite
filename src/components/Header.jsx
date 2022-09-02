@@ -114,12 +114,12 @@ export function Header() {
                             <MobileNavLink href="/contact">
                               Contact
                             </MobileNavLink>
-                            <MobileNavLink href="#blog">
+                            <MobileNavLink href="/blog">
                               Blog
                             </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="https://admin.gapp.pk" variant="outline">
+                            <Button href="https://admin.gappblocks.com" variant="outline">
                               Sign In
                             </Button>
                             <Button href="/pricing">Sign Up</Button>
@@ -131,7 +131,7 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="https://admin.gapp.pk" variant="outline" className="hidden lg:block">
+            <Button href="https://admin.gappblocks.com" variant="outline" className="hidden lg:block">
               Sign In
             </Button>
             <Button href="/pricing" className="hidden lg:block">
