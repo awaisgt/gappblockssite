@@ -8,6 +8,8 @@ import { Faqs } from "@/components/Faqs"
 import { Testimonials } from "@/components/Testimonials"
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import Head from 'next/head'
+
 const plans = [
   {
     name: 'Hobby',
@@ -194,88 +196,96 @@ export default function Pricing() {
   let [activePeriod, setActivePeriod] = useState('Monthly')
 
   return (
+    <>
+      <Head>
+      <title>Pricing | GAPP Blocks</title>
+      <meta
+          name="description"
+          content="We have got all the tools to turn your e-commerce ideas into reality.GAPP Blocks presents you with an easy no-code solution to kickstart your journey of success."
+      />
+      </Head>
 
-    <section>
-    <Header/>
+      <section>
+      <Header/>
 
 
-      <Container>
-        <div className="mx-auto max-w-2xl text-center mt-8">
-          <h2
-            id="pricing-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
-          >
-            Simple prices that work for every business
-          </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
-          </p>
-        </div>
-
-        <div className="mt-8 flex justify-center">
-          <div className="relative">
-            <RadioGroup
-              value={activePeriod}
-              onChange={setActivePeriod}
-              className="grid grid-cols-2"
+        <Container>
+          <div className="mx-auto max-w-2xl text-center mt-8">
+            <h2
+              id="pricing-title"
+              className="text-3xl font-medium tracking-tight text-gray-900"
             >
-              {['Monthly', 'Annually'].map((period) => (
-                <RadioGroup.Option
-                  key={period}
-                  value={period}
-                  className={clsx(
-                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
-                    period === 'Monthly'
-                      ? 'rounded-l-lg'
-                      : '-ml-px rounded-r-lg'
-                  )}
-                >
-                  {period}
-                </RadioGroup.Option>
-              ))}
-            </RadioGroup>
-            <div
-              aria-hidden="true"
-              className={clsx(
-                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
-                activePeriod === 'Monthly'
-                  ? '[clip-path:inset(0_50%_0_0)]'
-                  : '[clip-path:inset(0_0_0_calc(50%-1px))]'
-              )}
-            >
-              {['Monthly', 'Annually'].map((period) => (
-                <div
-                  key={period}
-                  className={clsx(
-                    'py-2 text-center text-sm font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
-                    period === 'Annually' && '-ml-px'
-                  )}
-                >
-                  {period}
-                </div>
-              ))}
+              Simple prices that work for every business
+            </h2>
+            <p className="mt-2 text-lg text-gray-600">
+              Whether you’re one person trying to get ahead or a big firm trying
+              to take over the world, we’ve got a plan for you.
+            </p>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <div className="relative">
+              <RadioGroup
+                value={activePeriod}
+                onChange={setActivePeriod}
+                className="grid grid-cols-2"
+              >
+                {['Monthly', 'Annually'].map((period) => (
+                  <RadioGroup.Option
+                    key={period}
+                    value={period}
+                    className={clsx(
+                      'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
+                      period === 'Monthly'
+                        ? 'rounded-l-lg'
+                        : '-ml-px rounded-r-lg'
+                    )}
+                  >
+                    {period}
+                  </RadioGroup.Option>
+                ))}
+              </RadioGroup>
+              <div
+                aria-hidden="true"
+                className={clsx(
+                  'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
+                  activePeriod === 'Monthly'
+                    ? '[clip-path:inset(0_50%_0_0)]'
+                    : '[clip-path:inset(0_0_0_calc(50%-1px))]'
+                )}
+              >
+                {['Monthly', 'Annually'].map((period) => (
+                  <div
+                    key={period}
+                    className={clsx(
+                      'py-2 text-center text-sm font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
+                      period === 'Annually' && '-ml-px'
+                    )}
+                  >
+                    {period}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3 mb-16">
-          {plans.map((plan) => (
-            <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
-          ))}
-        </div>
-      </Container>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3 mb-16">
+            {plans.map((plan) => (
+              <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
+            ))}
+          </div>
+        </Container>
 
-      <Testimonials
-        text={"GAPP Blocks has all the capabilities needed to build reliable mobile and web apps. " +
-            "The platform includes CMS, Product Management, Shipping, Payment Processing, " +
-            "and Real-Time Delivery Driver Tracking modules"}
-        by={"Marie Chilvers"}
-        designation={"CEO, Mom's Cuisine"}
-      />
-      <Faqs></Faqs>
-      <Footer></Footer>
-    </section>
-
+        <Testimonials
+          text={"GAPP Blocks has all the capabilities needed to build reliable mobile and web apps. " +
+              "The platform includes CMS, Product Management, Shipping, Payment Processing, " +
+              "and Real-Time Delivery Driver Tracking modules"}
+          by={"Marie Chilvers"}
+          designation={"CEO, Mom's Cuisine"}
+        />
+        <Faqs></Faqs>
+        <Footer></Footer>
+      </section>
+    </>
   )
 }

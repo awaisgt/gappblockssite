@@ -16,6 +16,8 @@ import { AppScreen } from '@/components/AppScreen'
 import myEarnings from '@/images/screens/finder-my-earnings.png'
 import manageOrders from '@/images/screens/finder-manage-orders.png'
 import easyNavigation from '@/images/screens/finder-easy-navigation.png'
+import Head from 'next/head';
+
 
 const HeroSectionHeadingContent = {
   Heading1: "GAPP Finder",
@@ -290,6 +292,13 @@ export default function Register() {
     
     return (
       <>
+        <Head>
+          <title>Finder | GAPP Blocks</title>
+          <meta
+              name="description"
+              content="We have got all the tools to turn your e-commerce ideas into reality.GAPP Blocks presents you with an easy no-code solution to kickstart your journey of success."
+          />
+        </Head>
       <Header/>
         <HeroSection secondaryHidden={false} headingContent={HeroSectionHeadingContent} innerContent={HeroSectionInnerContent}/>
         <PrimaryFeatures content={PrimaryFeaturesContent} features={primaryFeatures}/>
