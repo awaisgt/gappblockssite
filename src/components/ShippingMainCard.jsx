@@ -112,7 +112,7 @@ export default function ShippingMainCard() {
                     src={Cargo.src}
                     alt="People working on laptops"
                   />
-                  <div className="absolute inset-0 bg-accent mix-blend-multiply" />
+                  <div className="absolute inset-0 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
@@ -130,7 +130,7 @@ export default function ShippingMainCard() {
           <div className="bg-gray-100">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
               <p className="text-center text-base font-semibold text-gray-500">
-                Choose Your Preferred Way of Payment
+                Choose Your Preferred Way of Shipping
               </p>
               <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
