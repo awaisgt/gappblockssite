@@ -19,7 +19,8 @@ const plans = [
       'Everything you need to set up your web shop, mobile shop and process payments.',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      qHref: 'https://buy.stripe.com/7sI18081e1EWfZKaEM',
+      aHref: 'https://buy.stripe.com/eVaeYQftG3N44h24gl',
     },
     features: [
       '500 orders',
@@ -37,7 +38,8 @@ const plans = [
       'Take your company to the next level by using GAPP Finder to manage your delivery staff',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      qHref: 'https://buy.stripe.com/14k7wogxK97obJu9AH',
+      aHref: 'https://buy.stripe.com/cN203W4P20ASdRC28c',
     },
     features: [
       '1000 Orders',
@@ -56,7 +58,8 @@ const plans = [
       'Enjoy the benefits of GAPP Blocks & GAPP CO to the fullest, with the support of multiple branches',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      qHref: 'https://buy.stripe.com/9AQbME3KYdnE8xicMS',
+      aHref: 'https://buy.stripe.com/aEUg2U1CQdnE8xi8wz',
     },
     features: [
       '5000 Orders',
@@ -181,7 +184,7 @@ function Plan({
         </ul>
       </div>
       <Button
-        href={button.href}
+        href={activePeriod === 'Quarterly' ? button.qHref : button.aHref}
         color={featured ? 'cyan' : 'gray'}
         className="mt-6"
         aria-label={`Get started with the ${name} plan for ${price}`}
