@@ -14,7 +14,7 @@ const plans = [
   {
     name: 'Hobby',
     featured: false,
-    price: { Monthly: '$49', Annually: '$349' },
+    price: { Quarterly: '$150', Annually: '$580' },
     description:
       'Everything you need to set up your web shop, mobile shop and process payments.',
     button: {
@@ -32,7 +32,7 @@ const plans = [
   {
     name: 'Growth',
     featured: false,
-    price: { Monthly: '$99', Annually: '$949' },
+    price: { Quarterly: '$300', Annually: '$1100' },
     description:
       'Take your company to the next level by using GAPP Finder to manage your delivery staff',
     button: {
@@ -51,7 +51,7 @@ const plans = [
   {
     name: 'Scale',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,799' },
+    price: { Quarterly: '$660', Annually: '$2,500' },
     description:
       'Enjoy the benefits of GAPP Blocks & GAPP CO to the fullest, with the support of multiple branches',
     button: {
@@ -122,8 +122,8 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        {price.Monthly === price.Annually ? (
-          price.Monthly
+        {price.Quarterly === price.Annually ? (
+          price.Quarterly
         ) : (
           <>
             <span
@@ -134,13 +134,13 @@ function Plan({
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Monthly}
+              {price.Quarterly}
             </span>
             <span
-              aria-hidden={activePeriod === 'Monthly'}
+              aria-hidden={activePeriod === 'Quarterly'}
               className={clsx(
                 'absolute left-0 top-0 transition duration-300',
-                activePeriod === 'Monthly' &&
+                activePeriod === 'Quarterly' &&
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
@@ -193,7 +193,7 @@ function Plan({
 }
 
 export default function Pricing() {
-  let [activePeriod, setActivePeriod] = useState('Monthly')
+  let [activePeriod, setActivePeriod] = useState('Quarterly')
 
   return (
     <>
@@ -230,13 +230,13 @@ export default function Pricing() {
                 onChange={setActivePeriod}
                 className="grid grid-cols-2"
               >
-                {['Monthly', 'Annually'].map((period) => (
+                {['Quarterly', 'Annually'].map((period) => (
                   <RadioGroup.Option
                     key={period}
                     value={period}
                     className={clsx(
                       'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
-                      period === 'Monthly'
+                      period === 'Quarterly'
                         ? 'rounded-l-lg'
                         : '-ml-px rounded-r-lg'
                     )}
@@ -249,12 +249,12 @@ export default function Pricing() {
                 aria-hidden="true"
                 className={clsx(
                   'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
-                  activePeriod === 'Monthly'
+                  activePeriod === 'Quarterly'
                     ? '[clip-path:inset(0_50%_0_0)]'
                     : '[clip-path:inset(0_0_0_calc(50%-1px))]'
                 )}
               >
-                {['Monthly', 'Annually'].map((period) => (
+                {['Quarterly', 'Annually'].map((period) => (
                   <div
                     key={period}
                     className={clsx(
