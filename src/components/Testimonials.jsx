@@ -10,6 +10,8 @@ export  function Testimonials(props) {
               <Image
                 src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80"
                 alt=""
+                width={500}
+                height={500}
                 className="w-full h-full object-cover"
               />
             </div>
