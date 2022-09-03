@@ -14,7 +14,7 @@ export function NavLinks() {
         ['Services', '#'],
         ['Pricing', 'pricing'],
         ['Contact', 'contact'],
-        ['Blog', '#blog'],
+        ['Blog', 'blog'],
     ].map(([label, href], index) => {
         if (index === 0) {
             return (<div 
