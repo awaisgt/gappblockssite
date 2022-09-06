@@ -189,6 +189,7 @@ export default function Home() {
               name="description"
               content="We have got all the tools to turn your e-commerce ideas into reality.GAPP Blocks presents you with an easy no-code solution to kickstart your journey of success."
           />
+          <meta name="google-site-verification" content="YchD7zZuUkAeIs-yFUD4SFxE1qSO2lh77IldjVXOPsc" />
       </Head>
       <Header />
       <main>
