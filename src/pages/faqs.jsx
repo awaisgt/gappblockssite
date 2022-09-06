@@ -3,6 +3,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Head from "next/head"
+import {ChatBot} from "@/components/ChatBot";
 
 export default function contact() {
     return (
@@ -16,6 +17,7 @@ export default function contact() {
         </Head>
         <Header/>
         <FAQAccordion />
+        <ChatBot />
         <Footer/>
         </>
         )

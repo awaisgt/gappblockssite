@@ -17,6 +17,7 @@ import myEarnings from '@/images/screens/finder-my-earnings.png'
 import manageOrders from '@/images/screens/finder-manage-orders.png'
 import easyNavigation from '@/images/screens/finder-easy-navigation.png'
 import Head from 'next/head';
+import {ChatBot} from "@/components/ChatBot";
 
 
 const HeroSectionHeadingContent = {
@@ -304,6 +305,7 @@ export default function Register() {
         <PrimaryFeatures content={PrimaryFeaturesContent} features={primaryFeatures}/>
         <SecondaryFeaturesFinder content={SecondaryFeaturesContent} features={secondaryFeatures}/>
         <CallToAction content={CallToActionContent}/>
+        <ChatBot />
       <Footer/>
       </>
     )}

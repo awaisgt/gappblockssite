@@ -5,6 +5,7 @@ import { StoreFrontHero } from "@/components/StoreFrontHero";
 import { StoreFrontPrimaryFeatures } from "@/components/StoreFrontPrimaryFeatures";
 import { StoreFrontSecondaryFeatures } from "@/components/StoreFrontSecondaryFeatures";
 import Head from "next/head";
+import {ChatBot} from "@/components/ChatBot";
 
 const CallToActionContent = {
     Heading:"Build Apps In Minutes!",
@@ -29,6 +30,7 @@ export default function storefront() {
         <StoreFrontSecondaryFeatures/>
         <StoreFrontPrimaryFeatures/>
         <CallToAction content={CallToActionContent}/>
+        <ChatBot />
         </main>
         <Footer/>
         </>

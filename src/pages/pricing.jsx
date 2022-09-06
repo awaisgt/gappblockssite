@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/Testimonials"
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Head from 'next/head'
+import {ChatBot} from "@/components/ChatBot";
 
 const plans = [
   {
@@ -287,6 +288,7 @@ export default function Pricing() {
           designation={"CEO, Mom's Cuisine"}
         />
         <Faqs></Faqs>
+        <ChatBot />
         <Footer></Footer>
       </section>
     </>

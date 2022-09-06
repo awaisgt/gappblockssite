@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer"
 import TextSection from "@/components/TextSection"
 import Link from "next/link";
 import Head from "next/head"
+import {ChatBot} from "@/components/ChatBot";
 
 const data = [
     {
@@ -72,6 +73,7 @@ export default function dataProcessingAddendum() {
                     </p>
                 </div>
             </TextSection>
+            <ChatBot />
             <Footer />
         </>
     )

@@ -13,6 +13,7 @@ import storefront from "@/images/screens/home-storefront.png"
 import notification from "@/images/screens/home-push-notifications.png"
 import liveTracking from "@/images/screens/home-live-tracking.png"
 import Head from "next/head"
+import { ChatBot } from "@/components/ChatBot";
 
 const maxZIndex = 2147483647
 
@@ -21,7 +22,6 @@ const bodyVariantBackwards = {
   scale: 0.8,
   zIndex: 0,
   filter: 'blur(4px)',
-  zIndex: 0,
   transition: { duration: 0.4 },
 }
 
@@ -197,6 +197,7 @@ export default function Home() {
         <Stats />
         <PrimaryFeatures content={PrimaryFeaturesContent} features={primaryFeatures}/>
         <Newsletter />
+        <ChatBot />
       </main>
       <Footer />
     </>

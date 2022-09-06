@@ -8,6 +8,7 @@ import {
     LogoCloud2PaymentPage
 } from "@/components/LogoCloudPaymentPage";
 import Head from 'next/head'
+import {ChatBot} from "@/components/ChatBot";
 
 const HeroSectionHeadingContent = {
   Heading1: "Simple payment, anytime. Anywhere.",
@@ -36,6 +37,7 @@ export default function Payment() {
       <CustomerSupportPaymentPage heading={"Trouble finding what you’re looking for?"}
                                   content={"Make a request to a GAPP Consultant for specialized assistance with the unique integration of the Shipping Method of your choosing, and the consultant will get back to you as soon as possible."}
                                   buttonText={"We’re here to help"} buttonLink={"/contact"}/>
-     <Footer/>
+      <ChatBot />
+      <Footer/>
       </>
     )}

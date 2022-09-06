@@ -2,6 +2,7 @@ import { Contact } from "@/components/Contact";
 import Head from 'next/head';
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import {ChatBot} from "@/components/ChatBot";
 
 export default function contact() {
 
@@ -16,7 +17,8 @@ export default function contact() {
         </Head>
         <Header/>
         <main>
-        <Contact/>
+        <Contact />
+        <ChatBot />
         </main>
         <Footer/>
         </>

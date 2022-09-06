@@ -3,6 +3,7 @@ import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import TextSection from "@/components/TextSection"
 import Head from "next/head";
+import {ChatBot} from "@/components/ChatBot";
 
 const data = [
     {
@@ -211,6 +212,7 @@ export default function privacyPolicy() {
                     ))}
                 </div>
             </TextSection>
+            <ChatBot />
             <Footer />
         </>
     )
