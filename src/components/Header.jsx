@@ -8,6 +8,7 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import { Services } from "@/components/Services";
+import CookiePopUp from "@/components/CookiePopUp";
 
 function MenuIcon(props) {
   return (
@@ -140,6 +141,7 @@ export function Header() {
           </div>
         </Container>
       </nav>
+      <CookiePopUp Heading={"Cookie Consent"} Content={"This website collects cookies to deliver better user experience"} Button1Text={"Accept"} Button2Text={"Cancel"}/>
     </header>
   )
 }
