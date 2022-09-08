@@ -20,7 +20,7 @@ export default function CookiePopUp({Heading, Content, Button1Text, Button2Text,
 
     return (
         <Transition.Root show={open} as={Fragment}>
-            <Dialog as="div" className="relative z-10" initialFocus={acceptButtonRef} onClose={() => {}}>
+            <Dialog as="div" className="relative z-50" initialFocus={acceptButtonRef} onClose={() => {}}>
                 <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"
@@ -33,7 +33,7 @@ export default function CookiePopUp({Heading, Content, Button1Text, Button2Text,
                     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
                 </Transition.Child>
 
-                <div className="fixed bottom-0 left-0 z-10 overflow-y-auto">
+                <div className="fixed bottom-0 left-5 z-50 overflow-y-auto">
                     <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
                         <Transition.Child
                             as={Fragment}
