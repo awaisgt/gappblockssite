@@ -49,6 +49,7 @@ function MobileNavLink({ children, ...props }) {
 }
 
 export function Header() {
+  const showPop = false;
   const [isOpenMobile, setIsOpenMobile] = useState(false)
   return (
     <header>
@@ -141,7 +142,11 @@ export function Header() {
           </div>
         </Container>
       </nav>
-      <CookiePopUp Heading={"Cookie Consent"} Content={"This website collects cookies to deliver better user experience"} Button1Text={"Accept"} Button2Text={"Cancel"}/>
-    </header>
+        {showPop &&
+            <CookiePopUp Heading={"Cookie Consent"}
+                         Content={"This website collects cookies to deliver better user experience"}
+                         Button1Text={"Accept"} Button2Text={"Cancel"}/>
+        }
+  </header>
   )
 }
