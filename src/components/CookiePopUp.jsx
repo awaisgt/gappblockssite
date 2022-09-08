@@ -1,15 +1,26 @@
-import { Fragment, useRef, useState } from 'react'
+import { Fragment, useRef, useState, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { CheckIcon } from '@heroicons/react/24/outline'
+
+const KEY = 'cookieConsent'
 
 export default function CookiePopUp({Heading, Content, Button1Text, Button2Text, Button1Action, Button2Action}) {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
+    useEffect(() => {
+        if (localStorage.getItem(KEY) === null) {
+            setOpen(true);
+            localStorage.setItem(KEY, "true");
+        }
+    }, []);
 
-    const cancelButtonRef = useRef(null)
+    const setLocalStorage = (key, value) => {
+        localStorage.setItem(key, value);
+    }
+
+    const acceptButtonRef = useRef(null)
 
     return (
         <Transition.Root show={open} as={Fragment}>
-            <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={() => {}}>
+            <Dialog as="div" className="relative z-10" initialFocus={acceptButtonRef} onClose={() => {}}>
                 <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"
@@ -52,17 +63,19 @@ export default function CookiePopUp({Heading, Content, Button1Text, Button2Text,
                                         className="inline-flex w-full justify-center rounded-md border border-transparent bg-accent px-4 py-2 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 sm:col-start-2 sm:text-sm"
                                         onClick={() => {
                                             setOpen(false);
+                                            setLocalStorage(KEY, 'false');
                                             Button1Action && Button1Action();
                                         }}
+                                        ref={acceptButtonRef}
                                     >
                                         {Button1Text}
                                     </button>
                                     <button
                                         type="button"
                                         className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
-                                        ref={cancelButtonRef}
                                         onClick={() => {
                                             setOpen(false);
+                                            setLocalStorage(KEY, 'false');
                                             Button2Action && Button2Action();
                                         }}>
                                         {Button2Text}
