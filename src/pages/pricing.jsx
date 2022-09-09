@@ -10,6 +10,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Head from 'next/head'
 import {ChatBot} from "@/components/ChatBot";
+import {PopUpPrivacyPolicy} from "@/components/Cookie-Privacy-Popup";
 
 const plans = [
   {
@@ -74,6 +75,26 @@ const plans = [
   },
 ]
 
+const PivacyPopUp = {
+  Heading: 'Privacy Policy',
+  Content1: "By clicking Accept, you agree to our ",
+  Content2: ". You can opt out at any time.",
+  Links: [
+    {
+      label: "Terms",
+      href: "terms-of-service"
+    },
+    {
+      label: "Privacy Policy",
+      href: "privacy-policy"
+    }
+  ],
+  Button: [
+    "Accept",
+    "Decline"
+  ]
+}
+
 function CheckIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -104,6 +125,8 @@ function Plan({
   featured = false,
   activePeriod,
   logomarkClassName,
+  openPrivacyPopUp,
+  setSubscribeLink
 }) {
   return (
     <section
@@ -185,7 +208,10 @@ function Plan({
         </ul>
       </div>
       <Button
-        href={activePeriod === 'Quarterly' ? button.qHref : button.aHref}
+        onClick={() => {
+            setSubscribeLink(activePeriod === 'Quarterly' ? button.qHref : button.aHref)
+            openPrivacyPopUp(true)
+        }}
         color={featured ? 'cyan' : 'gray'}
         className="mt-6"
         aria-label={`Get started with the ${name} plan for ${price}`}
@@ -198,6 +224,8 @@ function Plan({
 
 export default function Pricing() {
   let [activePeriod, setActivePeriod] = useState('Quarterly')
+  const [privacyPolicyPopUp, setPrivacyPolicyPopUp] = useState(false)
+  const [subscribeLink, setSubscribeLink] = useState('')
 
   return (
     <>
@@ -275,7 +303,7 @@ export default function Pricing() {
 
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3 mb-16">
             {plans.map((plan) => (
-              <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
+              <Plan key={plan.name} {...plan} activePeriod={activePeriod} openPrivacyPopUp={setPrivacyPolicyPopUp} setSubscribeLink={setSubscribeLink}/>
             ))}
           </div>
         </Container>
@@ -290,6 +318,7 @@ export default function Pricing() {
         <Faqs></Faqs>
         <ChatBot />
         <Footer></Footer>
+        <PopUpPrivacyPolicy data={PivacyPopUp} open={privacyPolicyPopUp} setOpen={setPrivacyPolicyPopUp} acceptButtonLink={subscribeLink}/>
       </section>
     </>
   )
