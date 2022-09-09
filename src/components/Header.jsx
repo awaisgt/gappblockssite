@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import { Popover } from '@headlessui/react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { useState } from 'react'
+import {Popover} from '@headlessui/react'
+import {AnimatePresence, motion} from 'framer-motion'
+import {useState} from 'react'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
-import { Services } from "@/components/Services";
-import CookiePopUp from "@/components/CookiePopUp";
+import {Button} from '@/components/Button'
+import {Container} from '@/components/Container'
+import {Logo} from '@/components/Logo'
+import {NavLinks} from '@/components/NavLinks'
+import {Services} from "@/components/Services";
+import {CookieConsent} from "@/components/Cookie-Privacy-Popup";
 
 function MenuIcon(props) {
   return (
@@ -51,6 +51,13 @@ function MobileNavLink({ children, ...props }) {
 export function Header() {
   const showPop = false;
   const [isOpenMobile, setIsOpenMobile] = useState(false)
+
+  const cookieConsentData = {
+    "Heading": "Cookie Consent",
+    "Content": "This website collects cookies to deliver better user experience",
+    "Button1Text": "Accept",
+    "Button2Text": "Cancel"
+  }
   return (
     <header>
       <nav>
@@ -143,9 +150,7 @@ export function Header() {
         </Container>
       </nav>
         {showPop &&
-            <CookiePopUp Heading={"Cookie Consent"}
-                         Content={"This website collects cookies to deliver better user experience"}
-                         Button1Text={"Accept"} Button2Text={"Cancel"}/>
+            <CookieConsent data={cookieConsentData}/>
         }
   </header>
   )
