@@ -74,7 +74,7 @@ export default function termsOfService() {
                     <span className="block text-center text-lg font-semibold text-indigo-600">Terms Of Service</span>
                     </h1>
                     <p className="text-justify py-4">
-                    Thank you for using services rendered by our site, <Link className="text-accent" href="www.gappblocks.com">www.gappblocks.com</Link> including linked domains integrated within the site (hereinafter together referred to as the “Site” or “Website”). These terms and conditions govern your access to and use of the Site and the services we offer (together “Services”). Please read them carefully before availing any of the Service we provide. The terms “we”, “us” or “our”, refer to the Site.
+                    Thank you for using services rendered by our site, <Link className="text-accent" href="https://gappblocks.com">www.gappblocks.com</Link> including linked domains integrated within the site (hereinafter together referred to as the “Site” or “Website”). These terms and conditions govern your access to and use of the Site and the services we offer (together “Services”). Please read them carefully before availing any of the Service we provide. The terms “we”, “us” or “our”, refer to the Site.
                     </p>
                 </div>
                 <div className="prose prose-lg prose-indigo max-w-4xl mx-auto mt-6 text-gray-500">
