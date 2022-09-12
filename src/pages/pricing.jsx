@@ -161,7 +161,7 @@ function Plan({
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
-              <p className={clsx('text-lg text-gray-500')}>&nbsp;</p>
+              <div className={clsx('text-lg text-gray-500')}>&nbsp;</div>
               {price.Monthly}<span className={clsx('text-xl text-gray-500')}> /mo</span>
             </span>
             <span
@@ -172,7 +172,7 @@ function Plan({
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
-              <p className={clsx('text-lg text-gray-500 line-through')}>{price.Monthly}</p>
+              <div className={clsx('text-lg text-gray-500 line-through')}>{price.Monthly}</div>
               {price.Yearly}<span className={clsx('text-xl text-gray-500')}> /mo</span>
             </span>
           </>
