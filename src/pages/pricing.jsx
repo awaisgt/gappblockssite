@@ -16,7 +16,7 @@ const plans = [
   {
     name: 'Hobby',
     featured: false,
-    price: { Monthly: '$300', Yearly: '$255' },
+    price: { Monthly: '$300', Yearly: '$255', Difference: "$45"},
     description:
       'Everything you need to set up your web shop, mobile shop and process payments.',
     button: {
@@ -35,7 +35,7 @@ const plans = [
   {
     name: 'Growth',
     featured: false,
-    price: { Monthly: '$500', Yearly: '$425' },
+    price: { Monthly: '$500', Yearly: '$425', Difference: "$75"},
     description:
       'Take your company to the next level by using GAPP Finder to manage your delivery staff',
     button: {
@@ -55,7 +55,7 @@ const plans = [
   {
     name: 'Scale',
     featured: true,
-    price: { Monthly: '$1000', Yearly: '$850' },
+    price: { Monthly: '$1000', Yearly: '$850', Difference: "$150"},
     description:
       'Enjoy the benefits of GAPP Blocks & GAPP CO to the fullest, with the support of multiple branches',
     button: {
@@ -161,6 +161,7 @@ function Plan({
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
+              <p className={clsx('text-lg text-gray-500')}>&nbsp;</p>
               {price.Monthly}<span className={clsx('text-xl text-gray-500')}> /mo</span>
             </span>
             <span
@@ -171,6 +172,7 @@ function Plan({
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
+              <p className={clsx('text-lg text-gray-500 line-through')}>{price.Monthly}</p>
               {price.Yearly}<span className={clsx('text-xl text-gray-500')}> /mo</span>
             </span>
           </>
