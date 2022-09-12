@@ -16,7 +16,7 @@ const plans = [
   {
     name: 'Hobby',
     featured: false,
-    price: { Quarterly: '$150', Annually: '$580' },
+    price: { Monthly: '$150', Yearly: '$580' },
     description:
       'Everything you need to set up your web shop, mobile shop and process payments.',
     button: {
@@ -35,7 +35,7 @@ const plans = [
   {
     name: 'Growth',
     featured: false,
-    price: { Quarterly: '$300', Annually: '$1100' },
+    price: { Monthly: '$300', Yearly: '$1100' },
     description:
       'Take your company to the next level by using GAPP Finder to manage your delivery staff',
     button: {
@@ -55,7 +55,7 @@ const plans = [
   {
     name: 'Scale',
     featured: true,
-    price: { Quarterly: '$660', Annually: '$2,500' },
+    price: { Monthly: '$660', Yearly: '$2,500' },
     description:
       'Enjoy the benefits of GAPP Blocks & GAPP CO to the fullest, with the support of multiple branches',
     button: {
@@ -149,29 +149,29 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        {price.Quarterly === price.Annually ? (
-          price.Quarterly
+        {price.Monthly === price.Yearly ? (
+          price.Monthly
         ) : (
           <>
             <span
-              aria-hidden={activePeriod === 'Annually'}
+              aria-hidden={activePeriod === 'Yearly'}
               className={clsx(
                 'transition duration-300',
-                activePeriod === 'Annually' &&
+                activePeriod === 'Yearly' &&
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Quarterly}
+              {price.Monthly}<span className={clsx('text-xl text-gray-500')}> /mo</span>
             </span>
             <span
-              aria-hidden={activePeriod === 'Quarterly'}
+              aria-hidden={activePeriod === 'Monthly'}
               className={clsx(
                 'absolute left-0 top-0 transition duration-300',
-                activePeriod === 'Quarterly' &&
+                activePeriod === 'Monthly' &&
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Annually}
+              {price.Yearly}
             </span>
           </>
         )}
@@ -209,7 +209,7 @@ function Plan({
       </div>
       <Button
         onClick={() => {
-            setSubscribeLink(activePeriod === 'Quarterly' ? button.qHref : button.aHref)
+            setSubscribeLink(activePeriod === 'Monthly' ? button.qHref : button.aHref)
             openPrivacyPopUp(true)
         }}
         color={featured ? 'cyan' : 'gray'}
@@ -223,7 +223,7 @@ function Plan({
 }
 
 export default function Pricing() {
-  let [activePeriod, setActivePeriod] = useState('Quarterly')
+  let [activePeriod, setActivePeriod] = useState('Monthly')
   const [privacyPolicyPopUp, setPrivacyPolicyPopUp] = useState(false)
   const [subscribeLink, setSubscribeLink] = useState('')
 
@@ -262,13 +262,13 @@ export default function Pricing() {
                 onChange={setActivePeriod}
                 className="grid grid-cols-2"
               >
-                {['Quarterly', 'Annually'].map((period) => (
+                {['Monthly', 'Yearly'].map((period) => (
                   <RadioGroup.Option
                     key={period}
                     value={period}
                     className={clsx(
                       'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
-                      period === 'Quarterly'
+                      period === 'Monthly'
                         ? 'rounded-l-lg'
                         : '-ml-px rounded-r-lg'
                     )}
@@ -281,17 +281,17 @@ export default function Pricing() {
                 aria-hidden="true"
                 className={clsx(
                   'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
-                  activePeriod === 'Quarterly'
+                  activePeriod === 'Monthly'
                     ? '[clip-path:inset(0_50%_0_0)]'
                     : '[clip-path:inset(0_0_0_calc(50%-1px))]'
                 )}
               >
-                {['Quarterly', 'Annually'].map((period) => (
+                {['Monthly', 'Yearly'].map((period) => (
                   <div
                     key={period}
                     className={clsx(
                       'py-2 text-center text-sm font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
-                      period === 'Annually' && '-ml-px'
+                      period === 'Yearly' && '-ml-px'
                     )}
                   >
                     {period}
