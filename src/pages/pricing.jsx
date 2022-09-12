@@ -141,11 +141,11 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        <span className="ml-4">{name}</span>
+        <span>{name}</span>
       </h3>
       <p
         className={clsx(
-          'relative mt-5 flex text-3xl tracking-tight',
+          'relative flex text-3xl tracking-tight',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
