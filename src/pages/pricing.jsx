@@ -154,10 +154,10 @@ function Plan({
         ) : (
           <>
             <span
-              aria-hidden={activePeriod === 'Yearly'}
+              aria-hidden={activePeriod === 'Yearly (Save 15%)'}
               className={clsx(
                 'transition duration-300',
-                activePeriod === 'Yearly' &&
+                activePeriod === 'Yearly (Save 15%)' &&
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
@@ -262,7 +262,7 @@ export default function Pricing() {
                 onChange={setActivePeriod}
                 className="grid grid-cols-2"
               >
-                {['Monthly', 'Yearly'].map((period) => (
+                {['Monthly', 'Yearly (Save 15%)'].map((period) => (
                   <RadioGroup.Option
                     key={period}
                     value={period}
@@ -286,12 +286,12 @@ export default function Pricing() {
                     : '[clip-path:inset(0_0_0_calc(50%-1px))]'
                 )}
               >
-                {['Monthly', 'Yearly'].map((period) => (
+                {['Monthly', 'Yearly (Save 15%)'].map((period) => (
                   <div
                     key={period}
                     className={clsx(
                       'py-2 text-center text-sm font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
-                      period === 'Yearly' && '-ml-px'
+                      period === 'Yearly (Save 15%)' && '-ml-px'
                     )}
                   >
                     {period}
