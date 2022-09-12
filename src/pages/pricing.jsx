@@ -14,7 +14,7 @@ import {PopUpPrivacyPolicy} from "@/components/Cookie-Privacy-Popup";
 
 const plans = [
   {
-    name: 'Hobby',
+    name: 'Basic',
     featured: false,
     price: { Monthly: '$300', Yearly: '$255', Difference: "$45"},
     description:
