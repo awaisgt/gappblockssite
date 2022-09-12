@@ -269,7 +269,7 @@ export default function Pricing() {
                     key={period}
                     value={period}
                     className={clsx(
-                      'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
+                      'cursor-pointer text-center  border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
                       period === 'Monthly'
                         ? 'rounded-l-lg'
                         : '-ml-px rounded-r-lg'
