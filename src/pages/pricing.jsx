@@ -171,7 +171,7 @@ function Plan({
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
-              {price.Yearly}
+              {price.Yearly}<span className={clsx('text-xl text-gray-500')}> /mo</span>
             </span>
           </>
         )}
