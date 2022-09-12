@@ -16,7 +16,7 @@ const plans = [
   {
     name: 'Hobby',
     featured: false,
-    price: { Monthly: '$150', Yearly: '$580' },
+    price: { Monthly: '$300', Yearly: '$255' },
     description:
       'Everything you need to set up your web shop, mobile shop and process payments.',
     button: {
@@ -35,7 +35,7 @@ const plans = [
   {
     name: 'Growth',
     featured: false,
-    price: { Monthly: '$300', Yearly: '$1100' },
+    price: { Monthly: '$500', Yearly: '$425' },
     description:
       'Take your company to the next level by using GAPP Finder to manage your delivery staff',
     button: {
@@ -55,7 +55,7 @@ const plans = [
   {
     name: 'Scale',
     featured: true,
-    price: { Monthly: '$660', Yearly: '$2,500' },
+    price: { Monthly: '$1000', Yearly: '$850' },
     description:
       'Enjoy the benefits of GAPP Blocks & GAPP CO to the fullest, with the support of multiple branches',
     button: {
