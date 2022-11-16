@@ -1,10 +1,11 @@
 const navigation = {
     main: [
-
-      { name: 'For Individuals', href: '/Why-geekspod' },
-      { name: 'For Companies', href: '/Geeks' },
-      { name: "Let's Connect", href: '/Contact' },
-    
+      { name: 'About', href: '#' },
+      { name: 'Blog', href: '#' },
+      { name: 'Jobs', href: '#' },
+      { name: 'Press', href: '#' },
+      { name: 'Accessibility', href: '#' },
+      { name: 'Partners', href: '#' },
     ],
     social: [
       {
@@ -71,9 +72,9 @@ const navigation = {
     ],
   }
   
-  export function Footer(props) {
+  export function Footer_White(props) {
     return (
-      <footer className={props.color}>
+      <footer className="bg-white-900">
         <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
